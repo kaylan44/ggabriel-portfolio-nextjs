@@ -65,27 +65,6 @@ export default function Project({ params }: ProjectPageProps) {
           </div>
         </h1>
         <ChipContainer textArr={project.category} />
-        <div className="mt-4 flex space-x-4">
-          <Link
-            href={siteConfig.links.github}
-            className="flex items-center space-x-2 text-sm"
-          >
-            <Image
-              src={profileImg}
-              alt={"naman"}
-              width={42}
-              height={42}
-              className="rounded-full bg-background"
-            />
-
-            <div className="flex-1 text-left leading-tight">
-              <p className="font-medium">{"Naman Barkiya"}</p>
-              <p className="text-[12px] text-muted-foreground">
-                @{siteConfig.username}
-              </p>
-            </div>
-          </Link>
-        </div>
       </div>
 
       <Image
