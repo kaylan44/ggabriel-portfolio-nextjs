@@ -8,9 +8,7 @@ import { buttonVariants } from "@/components/ui/button";
 import ChipContainer from "@/components/ui/chip-container";
 import CustomTooltip from "@/components/ui/custom-tooltip";
 import { Projects } from "@/config/projects";
-import { siteConfig } from "@/config/site";
 import { cn, formatDateFromObj } from "@/lib/utils";
-import profileImg from "@/public/profile-img.jpg";
 
 interface ProjectPageProps {
   params: {
@@ -18,7 +16,6 @@ interface ProjectPageProps {
   };
 }
 
-const githubUsername = "namanbarkiya";
 
 export default function Project({ params }: ProjectPageProps) {
   let project = Projects.find((val) => val.id === params.projectId);
