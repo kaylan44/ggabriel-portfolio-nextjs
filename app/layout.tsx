@@ -128,7 +128,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
           {children}
           <Analytics />
           <Toaster />
-          <ModalProvider />
         </ThemeProvider>
       </body>
       <GoogleAnalytics gaId={GA_ID} />

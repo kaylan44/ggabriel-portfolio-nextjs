@@ -12,14 +12,14 @@ export const skillsUnsorted: skillsInterface[] = [
     name: "Next.js",
     description:
       "Effortlessly build dynamic apps with routing, layouts, loading UI, and API routes.",
-    rating: 4,
+    rating: 5,
     icon: Icons.nextjs,
   },
   {
     name: "React",
     description:
       "Craft interactive user interfaces using components, state, props, and virtual DOM.",
-    rating: 4,
+    rating: 5,
     icon: Icons.react,
   },
   {
@@ -33,7 +33,7 @@ export const skillsUnsorted: skillsInterface[] = [
     name: "MongoDB",
     description:
       "Store and retrieve data seamlessly with a flexible and scalable NoSQL database.",
-    rating: 5,
+    rating: 4,
     icon: Icons.mongodb,
   },
   {
@@ -47,7 +47,7 @@ export const skillsUnsorted: skillsInterface[] = [
     name: "Javascript",
     description:
       "Create interactive and dynamic web experiences with the versatile scripting language.",
-    rating: 5,
+    rating: 4,
     icon: Icons.javascript,
   },
   {
@@ -82,7 +82,7 @@ export const skillsUnsorted: skillsInterface[] = [
     name: "Docker",
     description:
       "Package applications and their dependencies into lightweight containers so they run consistently across any environment.",
-    rating: 3,
+    rating: 5,
     icon: Icons.socketio,
   },
   {
@@ -112,7 +112,21 @@ export const skillsUnsorted: skillsInterface[] = [
       "Manage and organize relational databases efficiently for data-driven applications.",
     rating: 3,
     icon: Icons.mysql,
-  }
+  },
+  {
+    name: "Prometheus",
+    description:
+      "Monitoring and alerting system that  to provide real-time insights into system performance.",
+    rating: 4,
+    icon: Icons.prometheus,
+  },
+  {
+    name: "Grafana",
+    description:
+      "visualize, monitor, and analyse data from diverse sources through fully customizable dashboards.",
+    rating: 4,
+    icon: Icons.grafana,
+  },
 ];
 
 export const skills = skillsUnsorted

@@ -69,7 +69,9 @@ import {
   SiMicrosoftazure,
   SiIonic,
   SiTerraform,
-  SiWhatsapp
+  SiWhatsapp,
+  SiGrafana,
+  SiPrometheus
 } from "react-icons/si";
 
 export const Icons = {
@@ -130,6 +132,8 @@ export const Icons = {
   azurecloud: SiMicrosoftazure,
   ionic: SiIonic,
   terraform: SiTerraform,
+  grafana: SiGrafana,
+  prometheus: SiPrometheus,
   gmail: SiGmail,
   whatsapp: SiWhatsapp,
   twitter: SiTwitter,
