@@ -71,7 +71,9 @@ import {
   SiTerraform,
   SiWhatsapp,
   SiGrafana,
-  SiPrometheus
+  SiPrometheus,
+  SiKubernetes,
+  SiHelm
 } from "react-icons/si";
 
 export const Icons = {
@@ -134,6 +136,8 @@ export const Icons = {
   terraform: SiTerraform,
   grafana: SiGrafana,
   prometheus: SiPrometheus,
+  kubernetes: SiKubernetes,
+  helm: SiHelm,
   gmail: SiGmail,
   whatsapp: SiWhatsapp,
   twitter: SiTwitter,
@@ -182,9 +186,4 @@ export const Icons = {
       </svg>
     </div>
   ),
-  retro: Palette,
-  cyberpunk: Zap,
-  paper: Scroll,
-  aurora: Sparkles,
-  synthwave: Music,
 };

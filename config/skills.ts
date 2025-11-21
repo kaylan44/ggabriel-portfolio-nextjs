@@ -123,9 +123,23 @@ export const skillsUnsorted: skillsInterface[] = [
   {
     name: "Grafana",
     description:
-      "visualize, monitor, and analyse data from diverse sources through fully customizable dashboards.",
+      "Visualize, monitor, and analyse data from diverse sources through fully customizable dashboards.",
     rating: 4,
     icon: Icons.grafana,
+  },
+  {
+    name: "Kubernetes",
+    description:
+      "Automates deployment, scaling, and management of containerized applications.",
+    rating: 4,
+    icon: Icons.kubernetes,
+  },
+  {
+    name: "Helm",
+    description:
+      "Simplify the deployment, configuration, and versioning of applications on Kubernetes through reusable charts.",
+    rating: 4,
+    icon: Icons.helm,
   },
 ];
 
