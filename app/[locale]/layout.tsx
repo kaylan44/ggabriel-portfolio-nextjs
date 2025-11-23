@@ -17,7 +17,7 @@ const fontSans = FontSans({
 
 // Font files can be colocated inside of `pages`
 const fontHeading = localFont({
-  src: "../assets/fonts/CalSans-SemiBold.woff2",
+  src: "../../assets/fonts/CalSans-SemiBold.woff2",
   variable: "--font-heading",
 });
 
@@ -36,7 +36,6 @@ export const metadata = {
   authors: [
     {
       name: siteConfig.authorName,
-      url: siteConfig.url,
     },
   ],
   creator: siteConfig.username,

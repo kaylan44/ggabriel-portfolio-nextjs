@@ -18,6 +18,7 @@ import { siteConfig } from "@/config/site";
 import { featuredSkills } from "@/config/skills";
 import { cn } from "@/lib/utils";
 import profileImg from "@/public/profile-img.jpg";
+import { getI18n } from "@/locales/server";
 
 export const metadata: Metadata = {
   title: `${pagesConfig.home.metadata.title} | ${pagesConfig.home.metadata.description}`,
@@ -27,7 +28,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function IndexPage() {
+export default async function IndexPage() {
+  // Translation
+  const i18n = await getI18n()
+
   // Structured data for personal portfolio
   const personSchema = {
     "@context": "https://schema.org",
@@ -35,9 +39,8 @@ export default function IndexPage() {
     name: siteConfig.authorName,
     url: siteConfig.url,
     image: siteConfig.ogImage,
-    jobTitle: siteConfig.jobTitle,
-    jobDescription: siteConfig.jobDescription,
-    sameAs: siteConfig.links.twitter,
+    jobTitle: i18n('siteConfig.jobTitle'),
+    jobDescription: i18n('siteConfig.jobDescription'),
   };
 
   // Structured data for website as a software application (template)
@@ -84,7 +87,7 @@ export default function IndexPage() {
             priority
           />
           <AnimatedText
-            as="h1"
+            as="h2"
             delay={0.2}
             className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl"
           >
