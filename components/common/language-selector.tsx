@@ -9,18 +9,18 @@ export function LanguageSelector() {
     const changeLocale = useChangeLocale()
     const language = useCurrentLocale()
 
-    if (language == "fr") {
+    if (language == "en") {
         return (
-            <Button onClick={() => changeLocale('en')} variant="ghost" size="sm" className="h-8 w-8 px-0">
+            <Button onClick={() => changeLocale('fr')} variant="ghost" size="sm" className="h-8 w-8 px-0">
                 <GB title="English" style={{ width: '50px', height: 'auto' }} />
                 <span className="sr-only">Change Language</span>
             </Button>
         );
     }
-    else if (language == "en") {
+    else if (language == "fr") {
         return (
-            <Button onClick={() => changeLocale('fr')} variant="ghost" size="sm" className="h-8 w-8 px-0">
-                <FR title="French" style={{ width: '50px', height: 'auto' }} />
+            <Button onClick={() => changeLocale('en')} variant="ghost" size="sm" className="h-8 w-8 px-0">
+                <FR title="Français" style={{ width: '50px', height: 'auto' }} />
                 <span className="sr-only">Change Language</span>
             </Button>
         );

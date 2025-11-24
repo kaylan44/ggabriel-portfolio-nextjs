@@ -60,6 +60,11 @@ export type ValidSkills =
   | "FastAPI"
   | "SQL"
   | "NoSQL"
+  | "Prometheus"
+  | "Ansible"
+  | "SOTI"
+  | "Velocity"
+  | "Project Management"
   | "Framer Motion";
 
 export type ValidCategory =

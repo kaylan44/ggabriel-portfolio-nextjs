@@ -1,4 +1,8 @@
 import { ValidSkills } from "./constants";
+import culturaLogo from "@/public/experience/cultura-logo.png";
+import atosLogo from "@/public/experience/atos-logo.png";
+import sanofiLogo from "@/public/experience/sanofi-logo.png";
+import { StaticImageData } from "next/image";
 
 export interface ExperienceInterface {
   id: string;
@@ -8,85 +12,94 @@ export interface ExperienceInterface {
   startDate: Date;
   endDate: Date | "Present";
   description: string[];
-  achievements: string[];
   skills: ValidSkills[];
   companyUrl?: string;
-  logo?: string;
+  logo?: StaticImageData;
 }
 
 export const experiences: ExperienceInterface[] = [
   {
-    id: "ubs",
-    position: "Software Development Engineer",
-    company: "UBS",
-    location: "Mumbai, India",
-    startDate: new Date("2024-08-01"),
-    endDate: "Present",
+    id: "cultura",
+    position: "DevOps Engineer",
+    company: "Cultura",
+    location: "Bordeaux, France",
+    startDate: new Date("2022-10-01"),
+    endDate: new Date("2024-02-25"),
     description: [
-      "Contributing to the P&L dashboard used by traders and senior stakeholders.",
-      "Leading the migration of the UI from Kendo to UBS's internal design system.",
-      "Building a daily FX rate fetcher by integrating Databricks jobs with backend services.",
+      "Implementation and development of monitoring and visualization tools (Prometheus/Grafana/AlertManager), as well as management of monitoring and alerting for non-production and production environments.",
+      "Deployment and optimization of projects through CI/CD pipelines using GitLab CI.",
+      "Setup of DevOps tooling with Kubernetes & Helm, along with management, creation, and optimization of Docker images using Azure Container Registry.",
+      "Development of Infrastructure as Code with Terraform and deployment of various Azure Cloud services, including support for Kubernetes cluster administration."
     ],
-    achievements: [
-      "Delivered production code within 1 month of joining by contributing to the P&L dashboard used by traders and senior stakeholders.",
-      "Led the migration of the UI from Kendo to UBS's internal design system, improving frontend consistency and performance.",
-      "Built a daily FX rate fetcher by integrating Databricks jobs (Python, Spark SQL) with backend services (Java), automating exchange rate updates.",
-      "Won UBS's internal AI Venture Challenge by developing data transformation pipelines and anomaly detection models on trading datasets.",
-      "Collaborated closely with product owners and designers for user-centric features, improving usability and trader workflows.",
-    ],
-    skills: ["Typescript", "React", "Databricks", "Java", "Python"],
-    companyUrl: "https://www.ubs.com",
-    logo: "/logo.png",
+    skills: ["Kubernetes", "Docker", "Prometheus", "Ansible", "Python"],
+    companyUrl: "https://cultura.com",
+    logo: culturaLogo,
   },
   {
-    id: "agentprod",
-    position: "Software Development Intern",
-    company: "Agentprod LLP",
-    location: "Bengaluru, India",
-    startDate: new Date("2023-10-01"),
-    endDate: new Date("2024-03-01"),
+    id: "sanofi",
+    position: "Industrial Device Expert",
+    company: "Sanofi",
+    location: "International",
+    startDate: new Date("2020-08-01"),
+    endDate: new Date("2022-09-01"),
     description: [
-      "Built backend for AI-driven chatbots using LLMs (GPT-4, Llama-2).",
-      "Developed APIs and integrated Slack, Google Workspace, and HubSpot automations.",
-      "Deployed ML models on AWS SageMaker instead of Replicate.",
+      'Management of industrial device fleets, deployment activities, and solution design & consulting in an international context within the “Mobility Industrial Devices” team, covering all SANOFI industrial sites.',
+      'Management of multiple major SANOFI projects independently for the Mobility & Devices scope, including support with ordering, solution design, planning coordination, and deployment of new hardware/applications.',
+      'Management of a fleet of approximately 4,000 devices across various sites worldwide, high-level support, and design of new solutions based on site requirements. Collaboration with industrial infrastructure teams (Wi-Fi, LAN, Firewall, AD management, cybersecurity, etc.).',
+      'Design of an industrial device catalog and testing of new equipment to address SANOFI’s numerous IT challenges (Android, Windows, ATEX Zones 1 & 2, scanning devices, etc.).',
+      'Coordination with various manufacturers and hardware suppliers to recommend optimal solutions for the sites (price/performance/quality) and co-construction of new projects in collaboration with suppliers.',
     ],
-    achievements: [
-      "Built backend for AI-driven chatbots using LLMs (GPT-4, Llama-2), improving function call accuracy by 40%.",
-      "Developed APIs and integrated Slack, Google Workspace, and HubSpot automations via FastAPI.",
-      "Deployed ML models on AWS SageMaker instead of Replicate, cutting load times by 30%.",
-      "Created a Next.js dashboard for user analytics.",
-    ],
-    skills: ["Next.js", "React", "Node.js", "AWS", "MongoDB", "Typescript"],
-    companyUrl: "https://agentprod.com",
-    logo: "/experience/agentprod-logo.png",
+    skills: ["SOTI", "Velocity", "Project Management"],
+    companyUrl: "https://sanofi.com",
+    logo: sanofiLogo,
+
   },
   {
-    id: "builtdesign",
-    position: "Web Developer Intern",
-    company: "Builtdesign",
-    location: "Nagpur, India",
-    startDate: new Date("2021-07-01"),
-    endDate: new Date("2022-07-01"),
+    id: "atos",
+    position: "Fullstack Developer",
+    company: "Atos",
+    location: "Bordeaux, France",
+    startDate: new Date("2018-10-01"),
+    endDate: new Date("2020-08-01"),
     description: [
-      "Developed websites using React, Angular, and GraphQL.",
-      "Set up AWS servers and CI/CD pipelines.",
-      "Built a multi-page PDF reader for large files (>300MB).",
-    ],
-    achievements: [
-      "Developed websites using React, Angular, and GraphQL; reduced API load time by 30%.",
-      "Set up AWS servers and CI/CD pipelines, scaling traffic to 3,000+ users/day.",
-      "Built a multi-page PDF reader for large files (>300MB) to boost user engagement.",
+      "Full-Stack development within a Scrum team for an innovative corporate carpooling solution in an IoT environment, including the creation of the entire application ecosystem from scratch.",
+      "Design of a containerized backend environment supporting the carpooling system and integrating multiple data sources (GPS, public transport, application data, parking information, etc.)",
+      "Management of environments and a CI/CD pipeline to ensure deployment quality (Docker/Jenkins/SonarQube)",
+      "Development carried out following the SCRUM methodology"
     ],
     skills: [
-      "React",
       "Angular",
-      "GraphQL",
-      "AWS",
+      "MongoDB",
+      "Typescript",
       "HTML 5",
       "CSS 3",
       "Javascript",
     ],
     companyUrl: "https://builtdesign.in",
-    logo: "/experience/builtdesign-logo.png",
+    logo: atosLogo,
+  },
+  {
+    id: "atosinter",
+    position: "Intern - Fullstack Developer",
+    company: "Atos",
+    location: "Bordeaux, France",
+    startDate: new Date("2018-02-01"),
+    endDate: new Date("2020-08-01"),
+    description: [
+      "Design and development of cross-platform mobile applications integrated into a Smart-City management system with multimodal transportation.",
+      "Design of a containerized backend environment supporting the carpooling system and integrating multiple data sources (GPS, public transport, application data, parking information, etc.)",
+      "Management of environments and a CI/CD pipeline to ensure deployment quality (Docker/Jenkins/SonarQube)",
+      "Development carried out following the SCRUM methodology"
+    ],
+    skills: [
+      "Angular",
+      "MongoDB",
+      "Typescript",
+      "HTML 5",
+      "CSS 3",
+      "Javascript",
+    ],
+    companyUrl: "https://atos.com",
+    logo: atosLogo,
   },
 ];

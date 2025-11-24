@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     canonical: siteConfig.url,
   },
 };
-  
-export default async function IndexPage({ params }: { params: Promise<{ locale: string }> }) {
-  
+
+export default async function IndexPage() {
+
   // Translation
   const i18n = await getI18n()
   const pagesConfig = await getPagesConfig();
@@ -162,7 +162,7 @@ export default async function IndexPage({ params }: { params: Promise<{ locale: 
           </Link>
         </AnimatedText>
       </AnimatedSection>
-      <AnimatedSection
+      {/* <AnimatedSection
         direction="right"
         className="container space-y-6 py-10 my-14"
         id="projects"
@@ -200,12 +200,12 @@ export default async function IndexPage({ params }: { params: Promise<{ locale: 
             </Button>
           </Link>
         </AnimatedText>
-        {/* <div className="mx-auto text-center md:max-w-[58rem]">
+        { <div className="mx-auto text-center md:max-w-[58rem]">
                     <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
                         See all the relevant experiences.
                     </p>
-                </div> */}
-      </AnimatedSection>
+                </div>}
+      </AnimatedSection> */}
       <AnimatedSection
         direction="left"
         className="container space-y-6 py-10 my-14"
