@@ -1,4 +1,5 @@
 import { Icons } from "@/components/common/icons";
+import { getI18n } from "@/locales/server";
 
 export interface skillsInterface {
   name: string;
@@ -7,144 +8,139 @@ export interface skillsInterface {
   icon: any;
 }
 
-export const skillsUnsorted: skillsInterface[] = [
-  {
-    name: "Next.js",
-    description:
-      "Effortlessly build dynamic apps with routing, layouts, loading UI, and API routes.",
-    rating: 5,
-    icon: Icons.nextjs,
-  },
-  {
-    name: "React",
-    description:
-      "Craft interactive user interfaces using components, state, props, and virtual DOM.",
-    rating: 5,
-    icon: Icons.react,
-  },
-  {
-    name: "Node.js",
-    description:
-      "Run JavaScript on the server side, enabling dynamic and responsive applications.",
-    rating: 4,
-    icon: Icons.nodejs,
-  },
-  {
-    name: "MongoDB",
-    description:
-      "Store and retrieve data seamlessly with a flexible and scalable NoSQL database.",
-    rating: 4,
-    icon: Icons.mongodb,
-  },
-  {
-    name: "Typescript",
-    description:
-      "Enhance JavaScript with static types, making code more understandable and reliable.",
-    rating: 5,
-    icon: Icons.typescript,
-  },
-  {
-    name: "Javascript",
-    description:
-      "Create interactive and dynamic web experiences with the versatile scripting language.",
-    rating: 4,
-    icon: Icons.javascript,
-  },
-  {
-    name: "HTML 5",
-    description:
-      "Structure web content beautifully with the latest version of HyperText Markup Language.",
-    rating: 4,
-    icon: Icons.html5,
-  },
-  {
-    name: "IONIC",
-    description:
-      "Develop cross-platform mobile apps using Angular for consistent and engaging experiences.",
-    rating: 4,
-    icon: Icons.ionic,
-  },
-  {
-    name: "Angular",
-    description:
-      "Build dynamic web apps with a TypeScript-based open-source framework by Google.",
-    rating: 5,
-    icon: Icons.angular,
-  },
-  {
-    name: "Terraform",
-    description:
-      "Define and provision infrastructure using code in a consistent, automated, and cloud-agnostic way.",
-    rating: 4,
-    icon: Icons.terraform,
-  },
-  {
-    name: "Docker",
-    description:
-      "Package applications and their dependencies into lightweight containers so they run consistently across any environment.",
-    rating: 5,
-    icon: Icons.socketio,
-  },
-  {
-    name: "Tailwind CSS",
-    description:
-      "Design beautiful, modern websites faster with a utility-first CSS framework.",
-    rating: 4,
-    icon: Icons.tailwindcss,
-  },
-  {
-    name: "Azure Cloud",
-    description:
-      "Utilize Amazon Web Services to build and deploy scalable, reliable, and secure applications.",
-    rating: 3,
-    icon: Icons.azurecloud,
-  },
-  {
-    name: "Bootstrap",
-    description:
-      "Quickly create responsive and appealing web designs using a popular CSS framework.",
-    rating: 2,
-    icon: Icons.bootstrap,
-  },
-  {
-    name: "MySQL",
-    description:
-      "Manage and organize relational databases efficiently for data-driven applications.",
-    rating: 3,
-    icon: Icons.mysql,
-  },
-  {
-    name: "Prometheus",
-    description:
-      "Monitoring and alerting system that  to provide real-time insights into system performance.",
-    rating: 4,
-    icon: Icons.prometheus,
-  },
-  {
-    name: "Grafana",
-    description:
-      "Visualize, monitor, and analyse data from diverse sources through fully customizable dashboards.",
-    rating: 4,
-    icon: Icons.grafana,
-  },
-  {
-    name: "Kubernetes",
-    description:
-      "Automates deployment, scaling, and management of containerized applications.",
-    rating: 4,
-    icon: Icons.kubernetes,
-  },
-  {
-    name: "Helm",
-    description:
-      "Simplify the deployment, configuration, and versioning of applications on Kubernetes through reusable charts.",
-    rating: 4,
-    icon: Icons.helm,
-  },
-];
+export async function createSkills() {
+  // Translation
+  const i18n = await getI18n()
 
-export const skills = skillsUnsorted
-  .slice()
-  .sort((a, b) => b.rating - a.rating);
+  return (
+    [
+      {
+        name: "Next.js",
+        description: i18n('skills.nextJs.description'),
+        rating: 5,
+        icon: Icons.nextjs,
+      },
+      {
+        name: "React",
+        description: i18n('skills.react.description'),
+        rating: 5,
+        icon: Icons.react,
+      },
+      {
+        name: "Node.js",
+        description: i18n('skills.nodejs.description'),
+        rating: 4,
+        icon: Icons.nodejs,
+      },
+      {
+        name: "MongoDB",
+        description: i18n('skills.mongodb.description'),
+        rating: 4,
+        icon: Icons.mongodb,
+      },
+      {
+        name: "Typescript",
+        description: i18n('skills.typescript.description'),
+        rating: 5,
+        icon: Icons.typescript,
+      },
+      {
+        name: "Javascript",
+        description: i18n('skills.javascript.description'),
+        rating: 4,
+        icon: Icons.javascript,
+      },
+      {
+        name: "HTML 5",
+        description: i18n('skills.html5.description'),
+        rating: 4,
+        icon: Icons.html5,
+      },
+      {
+        name: "IONIC",
+        description: i18n('skills.ionic.description'),
+        rating: 4,
+        icon: Icons.ionic,
+      },
+      {
+        name: "Angular",
+        description: i18n('skills.angular.description'),
+        rating: 5,
+        icon: Icons.angular,
+      },
+      {
+        name: "Terraform",
+        description: i18n('skills.terraform.description'),
+        rating: 4,
+        icon: Icons.terraform,
+      },
+      {
+        name: "Docker",
+        description: i18n('skills.docker.description'),
+        rating: 5,
+        icon: Icons.socketio,
+      },
+      {
+        name: "Tailwind CSS",
+        description: i18n('skills.tailwindcss.description'),
+        rating: 4,
+        icon: Icons.tailwindcss,
+      },
+      {
+        name: "Azure Cloud",
+        description: i18n('skills.azurecloud.description'),
+        rating: 3,
+        icon: Icons.azurecloud,
+      },
+      {
+        name: "Bootstrap",
+        description: i18n('skills.bootstrap.description'),
+        rating: 2,
+        icon: Icons.bootstrap,
+      },
+      {
+        name: "MySQL",
+        description: i18n('skills.mysql.description'),
+        rating: 3,
+        icon: Icons.mysql,
+      },
+      {
+        name: "Prometheus",
+        description: i18n('skills.prometheus.description'),
+        rating: 4,
+        icon: Icons.prometheus,
+      },
+      {
+        name: "Grafana",
+        description: i18n('skills.grafana.description'),
+        rating: 4,
+        icon: Icons.grafana,
+      },
+      {
+        name: "Kubernetes",
+        description: i18n('skills.kubernetes.description'),
+        rating: 4,
+        icon: Icons.kubernetes,
+      },
+      {
+        name: "Helm",
+        description: i18n('skills.helm.description'),
+        rating: 4,
+        icon: Icons.helm,
+      }
+    ]
+  )
+}
 
-export const featuredSkills = skills.slice(0, 6);
+export async function getSkills() {
+  const skills = await createSkills();
+
+  return skills.slice()
+    .sort((a, b) => b.rating - a.rating);
+}
+
+export async function getfeaturedSkills() {
+  const skills = await createSkills();
+
+  return skills.slice(0, 6);
+}

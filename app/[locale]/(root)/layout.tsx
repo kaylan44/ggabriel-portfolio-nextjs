@@ -2,13 +2,17 @@ import { LanguageSelector } from "@/components/common/language-selector";
 import { MainNav } from "@/components/common/main-nav";
 import { ModeToggle } from "@/components/common/mode-toggle";
 import { SiteFooter } from "@/components/common/site-footer";
-import { routesConfig } from "@/config/routes";
+import { getRoutesConfig } from "@/config/routes";
 
 interface MarketingLayoutProps {
   children: React.ReactNode;
 }
 
-export default function MarketingLayout({ children }: MarketingLayoutProps) {
+
+export default async function MarketingLayout({ children }: MarketingLayoutProps) {
+
+  const routesConfig = await getRoutesConfig();
+
   return (
     <div className="flex min-h-screen flex-col">
       <header className="container z-50 bg-background">

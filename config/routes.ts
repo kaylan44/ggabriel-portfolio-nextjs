@@ -1,20 +1,26 @@
-export const routesConfig: any = {
-  mainNav: [
-    {
-      title: "Skills",
-      href: "/skills",
-    },
-    {
-      title: "Projects",
-      href: "/projects",
-    },
-    {
-      title: "Experience",
-      href: "/experience",
-    },
-    {
-      title: "Contact",
-      href: "/contact",
-    },
-  ],
+import { getI18n } from "@/locales/server"
+
+export async function getRoutesConfig() {
+  // Translation
+  const i18n = await getI18n()
+  return {
+    mainNav: [
+      {
+        title: i18n('skills.title'),
+        href: "/skills",
+      },
+      {
+        title: i18n('projects.title'),
+        href: "/projects",
+      },
+      {
+        title: i18n('experience.title'),
+        href: "/experience",
+      },
+      {
+        title: i18n('contact.title'),
+        href: "/contact",
+      },
+    ],
+  }
 };

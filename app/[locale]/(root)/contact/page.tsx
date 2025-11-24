@@ -2,14 +2,18 @@ import { Metadata } from "next";
 
 import PageContainer from "@/components/common/page-container";
 import { ContactForm } from "@/components/forms/contact-form";
-import { pagesConfig } from "@/config/pages";
+import { getPagesConfig } from "@/config/pages";
+import { pagesConfigMetadata } from "@/config/page-metadata";
+
 
 export const metadata: Metadata = {
-  title: pagesConfig.contact.metadata.title,
-  description: pagesConfig.contact.metadata.description,
+  title: pagesConfigMetadata.contact.metadata.title,
+  description: pagesConfigMetadata.contact.metadata.description,
 };
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  const pagesConfig = await getPagesConfig();
+
   return (
     <PageContainer
       title={pagesConfig.contact.title}

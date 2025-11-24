@@ -2,18 +2,23 @@ import { Metadata } from "next";
 
 import PageContainer from "@/components/common/page-container";
 import SkillsCard from "@/components/skills/skills-card";
-import { pagesConfig } from "@/config/pages";
-import { skills } from "@/config/skills";
+import { getSkills } from "@/config/skills";
 import { getI18n } from "@/locales/server";
+import { pagesConfigMetadata } from "@/config/page-metadata";
+import { getPagesConfig } from "@/config/pages";
 
 export const metadata: Metadata = {
-  title: pagesConfig.skills.metadata.title,
-  description: pagesConfig.skills.metadata.description,
+  title: pagesConfigMetadata.skills.metadata.title,
+  description: pagesConfigMetadata.skills.metadata.description,
 };
 
 export default async function SkillsPage() {
   // Translation
-  const i18n = await getI18n()
+  const i18n = await getI18n();
+
+  const skills = await getSkills();
+  const pagesConfig = await getPagesConfig();
+
 
   return (
     <PageContainer

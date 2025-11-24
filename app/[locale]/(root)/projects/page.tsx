@@ -3,12 +3,13 @@ import { Metadata } from "next";
 import PageContainer from "@/components/common/page-container";
 import ProjectCard from "@/components/projects/project-card";
 import { ResponsiveTabs } from "@/components/ui/responsive-tabs";
-import { pagesConfig } from "@/config/pages";
 import { Projects } from "@/config/projects";
+import { pagesConfigMetadata } from "@/config/page-metadata";
+import { getPagesConfig } from "@/config/pages";
 
 export const metadata: Metadata = {
-  title: pagesConfig.projects.metadata.title,
-  description: pagesConfig.projects.metadata.description,
+  title: pagesConfigMetadata.projects.metadata.title,
+  description: pagesConfigMetadata.projects.metadata.description,
 };
 
 const renderContent = (tabVal: string) => {
@@ -28,7 +29,9 @@ const renderContent = (tabVal: string) => {
   );
 };
 
-export default function ProjectsPage() {
+export default async function ProjectsPage() {
+  const pagesConfig = await getPagesConfig();
+
   const tabItems = [
     {
       value: "all",

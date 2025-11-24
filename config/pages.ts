@@ -1,4 +1,5 @@
 import { ValidPages } from "./constants";
+import { getI18n } from "@/locales/server";
 
 type PagesConfig = {
   [key in ValidPages]: {
@@ -12,55 +13,51 @@ type PagesConfig = {
   };
 };
 
-export const pagesConfig: PagesConfig = {
-  home: {
-    title: "Home",
-    description: "Welcome to my portfolio website.",
-    metadata: {
-      title: "Home",
-      description: "Guillaume Gabriel's portfolio website.",
+export async function getPagesConfig(): Promise<PagesConfig> {
+  // Translation
+  const i18n = await getI18n()
+
+  return {
+    home: {
+      title: i18n('home.title'),
+      description: i18n('home.description'),
+      metadata: {
+        title: i18n('home.title'),
+        description: i18n('home.metadata.description'),
+      },
+    }, 
+    skills: {
+      title: i18n('skills.title'),
+      description: i18n('skills.description'),
+      metadata: {
+        title: i18n('skills.title'),
+        description: i18n('skills.metadata.description'),
+      },
     },
-  },
-  skills: {
-    title: "Skills",
-    description: "Key skills that define my professional identity.",
-    metadata: {
-      title: "Skills",
-      description:
-        "Guillaume Gabriel's key skills that define his professional identity.",
+    projects: {
+      title: i18n('projects.title'),
+      description: i18n('projects.description'),
+      metadata: {
+        title: i18n('projects.title'),
+        description: i18n('projects.metadata.description'),
+      },
     },
-  },
-  projects: {
-    title: "Projects",
-    description: "Showcasing impactful projects and technical achievements.",
-    metadata: {
-      title: "Projects",
-      description: "Guillaume Gabriel's projects in building web applications.",
+    contact: {
+      title: i18n('contact.title'),
+      description: i18n('contact.description'),
+      metadata: {
+        title: i18n('contact.title'),
+        description: i18n('contact.metadata.description'),
+      },
     },
-  },
-  contact: {
-    title: "Contact",
-    description: "Let's connect and explore collaborations.",
-    metadata: {
-      title: "Contact",
-      description: "Contact Guillaume Gabriel.",
+    experience: {
+      title: i18n('experience.title'),
+      description: i18n('experience.description'),
+      metadata: {
+        title: i18n('experience.title'),
+        description: i18n('experience.metadata.description'),
+      },
     },
-  },
-  resume: {
-    title: "Resume",
-    description: "Guillaume Gabriel's resume.",
-    metadata: {
-      title: "Resume",
-      description: "Guillaume Gabriel's resume.",
-    },
-  },
-  experience: {
-    title: "Experience",
-    description: "Professional journey and career timeline.",
-    metadata: {
-      title: "Experience",
-      description:
-        "Guillaume Gabriel's professional journey and experience timeline.",
-    },
-  },
+  }
+
 };

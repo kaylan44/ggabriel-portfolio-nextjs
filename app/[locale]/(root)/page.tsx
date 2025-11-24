@@ -12,25 +12,28 @@ import ProjectCard from "@/components/projects/project-card";
 import SkillsCard from "@/components/skills/skills-card";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { experiences } from "@/config/experience";
-import { pagesConfig } from "@/config/pages";
+import { getPagesConfig } from "@/config/pages";
 import { featuredProjects } from "@/config/projects";
 import { siteConfig } from "@/config/site";
-import { featuredSkills } from "@/config/skills";
+import { getfeaturedSkills } from "@/config/skills";
 import { cn } from "@/lib/utils";
 import profileImg from "@/public/profile-img.jpg";
 import { getI18n } from "@/locales/server";
+import { pagesConfigMetadata } from "@/config/page-metadata";
 
 export const metadata: Metadata = {
-  title: `${pagesConfig.home.metadata.title} | ${pagesConfig.home.metadata.description}`,
-  description: `${pagesConfig.home.metadata.description} Showcase my skills and projects.`,
+  title: `${pagesConfigMetadata.home.metadata.title} | ${pagesConfigMetadata.home.metadata.description}`,
+  description: `${pagesConfigMetadata.home.metadata.description} Showcase my skills and projects.`,
   alternates: {
     canonical: siteConfig.url,
   },
 };
-
-export default async function IndexPage() {
+  
+export default async function IndexPage({ params }: { params: Promise<{ locale: string }> }) {
+  
   // Translation
   const i18n = await getI18n()
+  const pagesConfig = await getPagesConfig();
 
   // Structured data for personal portfolio
   const personSchema = {
@@ -61,6 +64,9 @@ export default async function IndexPage() {
       url: siteConfig.url,
     },
   };
+
+  // Get translated skills list
+  const featuredSkills = await getfeaturedSkills()
 
   return (
     <ClientPageWrapper>
