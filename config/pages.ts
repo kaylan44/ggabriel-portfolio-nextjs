@@ -58,6 +58,14 @@ export async function getPagesConfig(): Promise<PagesConfig> {
         description: i18n('experience.metadata.description'),
       },
     },
+    resume: {
+      title: i18n('resume.title'),
+      description: i18n('resume.description'),
+      metadata: {
+        title: i18n('resume.title'),
+        description: i18n('resume.metadata.description'),
+      },
+    },
   }
 
 };

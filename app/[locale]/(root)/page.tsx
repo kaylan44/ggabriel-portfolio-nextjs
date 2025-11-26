@@ -8,12 +8,10 @@ import { AnimatedText } from "@/components/common/animated-text";
 import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
 import { Icons } from "@/components/common/icons";
 import ExperienceCard from "@/components/experience/experience-card";
-import ProjectCard from "@/components/projects/project-card";
 import SkillsCard from "@/components/skills/skills-card";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { experiences } from "@/config/experience";
 import { getPagesConfig } from "@/config/pages";
-import { featuredProjects } from "@/config/projects";
 import { siteConfig } from "@/config/site";
 import { getfeaturedSkills } from "@/config/skills";
 import { cn } from "@/lib/utils";
@@ -106,13 +104,13 @@ export default async function IndexPage() {
           >
             {personSchema.jobTitle}
           </AnimatedText>
-          <div className="mt-4 max-w-[42rem] text-center">
+          <div className="mt-4 max-w-[55rem] text-center">
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
               {personSchema.jobDescription}
             </p>
           </div>
 
-          <div className="flex flex-col mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
+          <div className="flex flex-col mt-5 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
             <AnimatedText delay={0.8}>
               <Link
                 href={"/contact"}
@@ -130,7 +128,7 @@ export default async function IndexPage() {
             </AnimatedText>
           </div>
           <AnimatedText delay={1.2}>
-            <Icons.chevronDown className="h-6 w-6 mt-10" />
+            <Icons.chevronDown className="h-6 w-6 mt-5" />
           </AnimatedText>
         </div>
       </section>

@@ -41,6 +41,13 @@ export default {
     'skills.kubernetes.description': "Automates deployment, scaling, and management of containerized applications.",
     'skills.helm.description': "Simplify the deployment, configuration, and versioning of applications on Kubernetes through reusable charts.",
     
+    'resume.title': "Resume",
+    'resume.metadata.description': "Download resume of Guillaume Gabriel.",
+    'resume.description': "Please find details about my Resume below.",
+    'resume.jobTitle': "Fullstack Dev / DevOPS",
+    'resume.informations': "Graduated from ENSEIRB-MATMECA engineer school.",
+    'resume.download': "Download",
+    
     'experience': 'Experience',
     'studies': 'Studies',
     'siteConfig.jobTitle': "Full Stack Developer",

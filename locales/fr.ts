@@ -41,6 +41,14 @@ export default {
     'skills.grafana.description': "Visualiser, surveiller et analyser des données provenant de sources variées grâce à des tableaux de bord personnalisables.",
     'skills.kubernetes.description': "Automatiser le déploiement, la mise à l’échelle et la gestion des applications conteneurisées.",
     'skills.helm.description': "Simplifier le déploiement, la configuration et le versioning des applications sur Kubernetes grâce à des charts réutilisables.",
+    
+    'resume.title': "CV",
+    'resume.metadata.description': "CV à télécharger de Guillaume Gabriel.",
+    'resume.description': "Veuillez trouver mon CV détaillé ci-dessous.",
+    'resume.jobTitle': "Développeur Fullstack / DevOPS",
+    'resume.informations': "Ingénieur diplômé de l'ENSEIRB-MATMECA.",
+    'resume.download': "Télécharger",
+
     'experience': 'Expérience',
     'studies': 'Etudes',
     'siteConfig.jobTitle': "Développeur Full-Stack ",

@@ -43,4 +43,11 @@ export const pagesConfigMetadata: PagesConfigMetadata = {
         "Guillaume Gabriel's professional journey and experience timeline.",
     },
   },
+  resume: {
+    metadata: {
+      title: "Resume",
+      description:
+        "Guillaume Gabriel's professional Resume to download.",
+    },
+  },
 };
