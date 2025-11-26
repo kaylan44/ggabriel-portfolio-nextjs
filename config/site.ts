@@ -7,7 +7,7 @@ export const siteConfig = {
 //  jobTitle: "Full Stack Developer",
 //  jobDescription: "Développeur Fullstack passioné par le développement Web et le DevOps. Fort de mon expérience en entreprise je vous accompagne dans vos projets en France ou à l'international en React/NextJS ",
   url: "https://ggabriel-portfolio-nextjs.vercel.app",
-  ogImage: "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357294/assets/naman-logo.png",
+  ogImage: "https://ggabriel-portfolio-nextjs.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile-img.9d003a0a.jpg&w=828&q=75",
   iconIco:
     "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357384/assets/naman-favicon.ico",
   logoIcon:

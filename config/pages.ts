@@ -42,14 +42,14 @@ export async function getPagesConfig(): Promise<PagesConfig> {
         description: i18n('projects.metadata.description'),
       },
     },
-    contact: {
-      title: i18n('contact.title'),
-      description: i18n('contact.description'),
-      metadata: {
-        title: i18n('contact.title'),
-        description: i18n('contact.metadata.description'),
-      },
-    },
+    // contact: {
+    //   title: i18n('contact.title'),
+    //   description: i18n('contact.description'),
+    //   metadata: {
+    //     title: i18n('contact.title'),
+    //     description: i18n('contact.metadata.description'),
+    //   },
+    // },
     experience: {
       title: i18n('experience.title'),
       description: i18n('experience.description'),

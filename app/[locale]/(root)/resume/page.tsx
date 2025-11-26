@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: pagesConfigMetadata.resume.metadata.description,
 };
 
-export default async function ContactPage() {
+export default async function ResumePage() {
   const pagesConfig = await getPagesConfig();
 
   return (

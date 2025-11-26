@@ -113,7 +113,7 @@ export default async function IndexPage() {
           <div className="flex flex-col mt-5 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
             <AnimatedText delay={0.8}>
               <Link
-                href={"/contact"}
+                href={"/resume"}
                 rel="noreferrer"
                 className={cn(
                   buttonVariants({

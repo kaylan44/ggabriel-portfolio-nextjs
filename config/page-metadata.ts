@@ -30,12 +30,12 @@ export const pagesConfigMetadata: PagesConfigMetadata = {
       description: "Guillaume Gabriel's projects in building web applications.",
     },
   },
-  contact: {
-    metadata: {
-      title: "Contact",
-      description: "Contact Guillaume Gabriel.",
-    },
-  },
+  // contact: {
+  //   metadata: {
+  //     title: "Contact",
+  //     description: "Contact Guillaume Gabriel.",
+  //   },
+  // },
   experience: {
     metadata: {
       title: "Experience",
