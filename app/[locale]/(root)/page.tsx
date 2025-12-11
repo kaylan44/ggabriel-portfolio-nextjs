@@ -16,7 +16,7 @@ import { siteConfig } from "@/config/site";
 import { getfeaturedSkills } from "@/config/skills";
 import { cn } from "@/lib/utils";
 import profileImg from "@/public/profile-img.jpg";
-import { getI18n } from "@/locales/server";
+import { getCurrentLocale, getI18n } from "@/locales/server";
 import { pagesConfigMetadata } from "@/config/page-metadata";
 
 export const metadata: Metadata = {
@@ -29,6 +29,9 @@ export const metadata: Metadata = {
 
 export default async function IndexPage() {
 
+  const locale = await getCurrentLocale();
+
+  console.log("/"+locale + "/resume")
   // Translation
   const i18n = await getI18n()
   const pagesConfig = await getPagesConfig();
@@ -113,7 +116,7 @@ export default async function IndexPage() {
           <div className="flex flex-col mt-5 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
             <AnimatedText delay={0.8}>
               <Link
-                href={"/resume"}
+                href={`/${locale}/resume`}
                 rel="noreferrer"
                 className={cn(
                   buttonVariants({
@@ -153,7 +156,7 @@ export default async function IndexPage() {
         </div>
         <SkillsCard skills={featuredSkills} />
         <AnimatedText delay={0.4} className="flex justify-center">
-          <Link href="/skills">
+          <Link href={`/${locale}/skills`}>
             <Button variant={"outline"} className="rounded-xl">
               <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
             </Button>
@@ -236,7 +239,7 @@ export default async function IndexPage() {
           ))}
         </div>
         <AnimatedText delay={0.4} className="flex justify-center">
-          <Link href="/experience">
+          <Link href={`/${locale}/experience`}>
             <Button variant={"outline"} className="rounded-xl">
               <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
             </Button>
