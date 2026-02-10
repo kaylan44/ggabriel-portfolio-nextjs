@@ -5,6 +5,7 @@ import * as React from "react";
 import { siteConfig } from "@/config/site";
 import { useLockBody } from "@/hooks/use-lock-body";
 import { cn } from "@/lib/utils";
+import { useCurrentLocale } from "@/locales/client";
 
 interface MobileNavProps {
   items: any[];
@@ -20,6 +21,7 @@ const norican = Norican({
 
 export function MobileNav({ items, children }: MobileNavProps) {
   useLockBody();
+  const locale = useCurrentLocale();
 
   return (
     <div
@@ -28,7 +30,7 @@ export function MobileNav({ items, children }: MobileNavProps) {
       )}
     >
       <div className="relative z-20 grid gap-6 rounded-md bg-popover p-4 text-popover-foreground shadow-md">
-        <Link href="/" className="flex items-center space-x-2">
+        <Link href={`/${locale}`} className="flex items-center space-x-2">
           <span className={cn(norican.className, "text-2xl")}>
             {siteConfig.authorName}
           </span>

@@ -8,6 +8,7 @@ import { AnimatedSection } from "@/components/common/animated-section";
 import { Icons } from "@/components/common/icons";
 import { Button } from "@/components/ui/button";
 import { ExperienceInterface } from "@/config/experience";
+import { useCurrentLocale } from "@/locales/client";
 
 // Helper function to extract year from date
 const getYearFromDate = (date: Date): string => {
@@ -30,6 +31,7 @@ interface TimelineProps {
 }
 
 const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
+  const locale = useCurrentLocale();
   // Sort experiences by date (most recent first)
   const sortedExperiences = [...experiences].sort((a, b) => {
     const dateA = a.endDate === "Present" ? new Date() : a.endDate;
@@ -100,7 +102,7 @@ const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
                 className="rounded-lg w-full sm:w-auto"
                 asChild
               >
-                <Link href={`/experience/${experience.id}`}>
+                <Link href={`/${locale}/experience/${experience.id}`}>
                   View Details
                   <Icons.chevronRight className="ml-2 h-4 w-4" />
                 </Link>

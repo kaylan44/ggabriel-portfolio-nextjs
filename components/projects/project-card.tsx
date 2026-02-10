@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
 import { Icons } from "@/components/common/icons";
+import { useCurrentLocale } from "@/locales/client";
 import { Button } from "@/components/ui/button";
 import ChipContainer from "@/components/ui/chip-container";
 import { ProjectInterface } from "@/config/projects";
@@ -11,6 +14,7 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
+  const locale = useCurrentLocale();
   return (
     <div className="relative p-6 max-w-sm bg-background border border-border rounded-lg">
       <div className="relative w-full h-[200px]">
@@ -31,7 +35,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <div className="flex gap-2 flex-wrap">
           <ChipContainer textArr={project.category} />
         </div>
-        <Link href={`/projects/${project.id}`}>
+        <Link href={`/${locale}/projects/${project.id}`}>
           <Button variant={"default"} className="mt-2">
             Read more
             <Icons.chevronRight className="w-4 ml-1" />

@@ -7,6 +7,7 @@ import React from "react";
 import { Icons } from "@/components/common/icons";
 import { Button } from "@/components/ui/button";
 import { ExperienceInterface } from "@/config/experience";
+import { useCurrentLocale } from "@/locales/client";
 
 // Helper function to extract year from date
 const getYearFromDate = (date: Date): string => {
@@ -29,6 +30,7 @@ interface ExperienceCardProps {
 }
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
+  const locale = useCurrentLocale();
   return (
     <div className="group relative overflow-hidden rounded-lg border bg-background p-4 sm:p-6 transition-all duration-300">
       <div className="flex items-start gap-3 sm:gap-4">
@@ -98,7 +100,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
           className="rounded-lg w-full sm:w-auto"
           asChild
         >
-          <Link href={`/experience/${experience.id}`}>
+          <Link href={`/${locale}/experience/${experience.id}`}>
             View Details
             <Icons.chevronRight className="ml-2 h-4 w-4" />
           </Link>

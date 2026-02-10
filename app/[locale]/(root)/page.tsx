@@ -15,7 +15,7 @@ import { getPagesConfig } from "@/config/pages";
 import { siteConfig } from "@/config/site";
 import { getfeaturedSkills } from "@/config/skills";
 import { cn } from "@/lib/utils";
-import profileImg from "@/public/profile-img.jpg";
+import profileImg from "@/public/profile-img.png";
 import { getCurrentLocale, getI18n } from "@/locales/server";
 import { pagesConfigMetadata } from "@/config/page-metadata";
 
@@ -31,7 +31,6 @@ export default async function IndexPage() {
 
   const locale = await getCurrentLocale();
 
-  console.log("/"+locale + "/resume")
   // Translation
   const i18n = await getI18n()
   const pagesConfig = await getPagesConfig();

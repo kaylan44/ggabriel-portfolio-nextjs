@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Icons } from "@/components/common/icons";
 import { Button } from "@/components/ui/button";
 import { AnimatedSection } from "../common/animated-section";
-import profileImg from "@/public/profile-img.jpg";
+import profileImg from "@/public/profile-img.png";
 import { getI18n } from "@/locales/server";
 
 export default async function ResumeCard() {

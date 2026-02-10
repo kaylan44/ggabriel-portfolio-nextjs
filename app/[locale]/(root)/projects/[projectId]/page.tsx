@@ -3,6 +3,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 
 import { Icons } from "@/components/common/icons";
+import { getCurrentLocale } from "@/locales/server";
 import ProjectDescription from "@/components/projects/project-description";
 import { buttonVariants } from "@/components/ui/button";
 import ChipContainer from "@/components/ui/chip-container";
@@ -17,16 +18,17 @@ interface ProjectPageProps {
 }
 
 
-export default function Project({ params }: ProjectPageProps) {
+export default async function Project({ params }: ProjectPageProps) {
+  const locale = await getCurrentLocale();
   let project = Projects.find((val) => val.id === params.projectId);
   if (!project) {
-    redirect("/projects");
+    redirect(`/${locale}/projects`);
   }
 
   return (
     <article className="container relative max-w-3xl py-6 lg:py-10">
       <Link
-        href="/projects"
+        href={`/${locale}/projects`}
         className={cn(
           buttonVariants({ variant: "ghost" }),
           "absolute left-[-200px] top-14 hidden xl:inline-flex"
@@ -121,7 +123,7 @@ export default function Project({ params }: ProjectPageProps) {
       <hr className="mt-12" />
       <div className="flex justify-center py-6 lg:py-10">
         <Link
-          href="/projects"
+          href={`/${locale}/projects`}
           className={cn(buttonVariants({ variant: "ghost" }))}
         >
           <Icons.chevronLeft className="mr-2 h-4 w-4" />

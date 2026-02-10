@@ -3,13 +3,14 @@
 import { motion, Variants } from "framer-motion";
 import { Norican } from "next/font/google";
 import Link from "next/link";
-import { usePathname, useSelectedLayoutSegment } from "next/navigation";
+import { usePathname } from "next/navigation";
 import * as React from "react";
 
 import { Icons } from "@/components/common/icons";
 import { MobileNav } from "@/components/common/mobile-nav";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
+import { useCurrentLocale } from "@/locales/client";
 
 interface MainNavProps {
   items?: any[];
@@ -38,9 +39,9 @@ const navItemVariants : Variants = {
 };
 
 export function MainNav({ items, children }: MainNavProps) {
-  const segment = useSelectedLayoutSegment();
   const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false);
   const pathname = usePathname();
+  const locale = useCurrentLocale();
 
   React.useEffect(() => {
     setShowMobileMenu(false);
@@ -53,7 +54,7 @@ export function MainNav({ items, children }: MainNavProps) {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <Link href="/" className="hidden items-center space-x-2 md:flex">
+        <Link href={`/${locale}`} className="hidden items-center space-x-2 md:flex">
           <span className={cn(norican.className, "text-2xl")}>
             {siteConfig.authorName}
           </span>
@@ -75,7 +76,7 @@ export function MainNav({ items, children }: MainNavProps) {
                 href={item.disabled ? "#" : item.href}
                 className={cn(
                   "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm",
-                  item.href.startsWith(`/${segment}`)
+                  pathname === item.href || pathname.startsWith(`${item.href}/`)
                     ? "text-foreground"
                     : "text-foreground/60",
                   item.disabled && "cursor-not-allowed opacity-80"

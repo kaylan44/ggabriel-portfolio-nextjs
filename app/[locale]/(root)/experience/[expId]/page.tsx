@@ -4,6 +4,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 
 import { AnimatedSection } from "@/components/common/animated-section";
+import { getCurrentLocale } from "@/locales/server";
 import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
 import { Icons } from "@/components/common/icons";
 import { Button } from "@/components/ui/button";
@@ -55,13 +56,14 @@ export async function generateMetadata({
   };
 }
 
-export default function ExperienceDetailPage({
+export default async function ExperienceDetailPage({
   params,
 }: ExperienceDetailPageProps) {
+  const locale = await getCurrentLocale();
   const experience = experiences.find((c) => c.id === params.expId);
 
   if (!experience) {
-    redirect("/experience");
+    redirect(`/${locale}/experience`);
   }
 
   const tabItems = [
@@ -138,7 +140,7 @@ export default function ExperienceDetailPage({
       <div className="container max-w-4xl mx-auto py-8 px-4">
         <AnimatedSection className="mb-6">
           <Button variant="ghost" size="sm" className="mb-4" asChild>
-            <Link href="/experience">
+            <Link href={`/${locale}/experience`}>
               <Icons.chevronLeft className="mr-2 h-4 w-4" />
               Back to Experience
             </Link>
@@ -206,7 +208,7 @@ export default function ExperienceDetailPage({
 
         <AnimatedSection delay={0.4} className="flex justify-center mt-8">
           <Button variant="outline" asChild>
-            <Link href="/experience">
+            <Link href={`/${locale}/experience`}>
               <Icons.chevronLeft className="mr-2 h-4 w-4" />
               View All Experience
             </Link>

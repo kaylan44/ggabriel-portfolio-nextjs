@@ -1,29 +1,29 @@
-import { getI18n } from "@/locales/server"
+import { getCurrentLocale, getI18n } from "@/locales/server"
 
 export async function getRoutesConfig() {
   // Translation
-  const i18n = await getI18n()
+  const [locale, i18n] = await Promise.all([getCurrentLocale(), getI18n()])
   return {
     mainNav: [
       {
         title: i18n('skills.title'),
-        href: "/skills",
+        href: `/${locale}/skills`,
       },
       // {
       //   title: i18n('projects.title'),
-      //   href: "/projects",
+      //   href: `/${locale}/projects`,
       // },
       {
         title: i18n('experience.title'),
-        href: "/experience",
+        href: `/${locale}/experience`,
       },
       // {
       //   title: i18n('contact.title'),
-      //   href: "/contact",
+      //   href: `/${locale}/contact`,
       // },
       {
         title: i18n('resume.title'),
-        href: "/resume",
+        href: `/${locale}/resume`,
       },
     ],
   }
