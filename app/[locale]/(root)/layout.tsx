@@ -8,9 +8,7 @@ interface MarketingLayoutProps {
   children: React.ReactNode;
 }
 
-
 export default async function MarketingLayout({ children }: MarketingLayoutProps) {
-
   const routesConfig = await getRoutesConfig();
 
   return (

@@ -1,16 +1,20 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
+import dynamic from "next/dynamic";
 import { Norican } from "next/font/google";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import * as React from "react";
 
 import { Icons } from "@/components/common/icons";
-import { MobileNav } from "@/components/common/mobile-nav";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { useCurrentLocale } from "@/locales/client";
+
+const MobileNav = dynamic(() =>
+  import("@/components/common/mobile-nav").then((mod) => ({ default: mod.MobileNav }))
+);
 
 interface MainNavProps {
   items?: any[];

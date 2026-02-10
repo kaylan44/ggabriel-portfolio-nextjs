@@ -13,12 +13,14 @@ import { cn } from "@/lib/utils";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
+  display: "swap",
 });
 
 // Font files can be colocated inside of `pages`
 const fontHeading = localFont({
   src: "../../assets/fonts/CalSans-SemiBold.woff2",
   variable: "--font-heading",
+  display: "swap",
 });
 
 interface RootLayoutProps {
@@ -94,11 +96,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  // const GA_ID = process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID;
-  // if (!GA_ID) {
-  //   throw new Error("Missing Google Analytics ID");
-  // }
-
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
