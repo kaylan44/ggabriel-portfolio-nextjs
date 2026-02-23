@@ -18,6 +18,8 @@ import { cn } from "@/lib/utils";
 import profileImg from "@/public/profile-img.png";
 import { getCurrentLocale, getI18n } from "@/locales/server";
 import { pagesConfigMetadata } from "@/config/page-metadata";
+import { featuredProjects } from "@/config/projects";
+import ProjectCard from "@/components/projects/project-card";
 
 export const metadata: Metadata = {
   title: `${pagesConfigMetadata.home.metadata.title} | ${pagesConfigMetadata.home.metadata.description}`,
@@ -134,37 +136,12 @@ export default async function IndexPage() {
           </AnimatedText>
         </div>
       </section>
+
+      {/* Projects Section */}
+      {/* -------------------------- */}
       <AnimatedSection
-        className="container space-y-6 bg-muted py-10"
-        id="skills"
-      >
-        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-          <AnimatedText
-            as="h2"
-            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
-          >
-            {pagesConfig.skills.title}
-          </AnimatedText>
-          <AnimatedText
-            as="p"
-            delay={0.2}
-            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
-          >
-            {pagesConfig.skills.description}
-          </AnimatedText>
-        </div>
-        <SkillsCard skills={featuredSkills} />
-        <AnimatedText delay={0.4} className="flex justify-center">
-          <Link href={`/${locale}/skills`}>
-            <Button variant={"outline"} className="rounded-xl">
-              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
-            </Button>
-          </Link>
-        </AnimatedText>
-      </AnimatedSection>
-      {/* <AnimatedSection
         direction="right"
-        className="container space-y-6 py-10 my-14"
+        className="container bg-muted space-y-6 py-10 my-14"
         id="projects"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
@@ -200,12 +177,15 @@ export default async function IndexPage() {
             </Button>
           </Link>
         </AnimatedText>
-        { <div className="mx-auto text-center md:max-w-[58rem]">
-                    <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-                        See all the relevant experiences.
-                    </p>
-                </div>}
-      </AnimatedSection> */}
+        {<div className="mx-auto text-center md:max-w-[58rem]">
+          <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+            See all the relevant experiences.
+          </p>
+        </div>}
+      </AnimatedSection>
+
+      {/* Experience Section */}
+      {/* -------------------------- */}
       <AnimatedSection
         direction="left"
         className="container space-y-6 py-10 my-14"
@@ -239,6 +219,37 @@ export default async function IndexPage() {
         </div>
         <AnimatedText delay={0.4} className="flex justify-center">
           <Link href={`/${locale}/experience`}>
+            <Button variant={"outline"} className="rounded-xl">
+              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+            </Button>
+          </Link>
+        </AnimatedText>
+      </AnimatedSection>
+
+      {/* Skills Section */}
+      {/* -------------------------- */}
+      <AnimatedSection
+        className="container space-y-6 bg-muted py-10"
+        id="skills"
+      >
+        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+          <AnimatedText
+            as="h2"
+            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
+          >
+            {pagesConfig.skills.title}
+          </AnimatedText>
+          <AnimatedText
+            as="p"
+            delay={0.2}
+            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
+          >
+            {pagesConfig.skills.description}
+          </AnimatedText>
+        </div>
+        <SkillsCard skills={featuredSkills} />
+        <AnimatedText delay={0.4} className="flex justify-center">
+          <Link href={`/${locale}/skills`}>
             <Button variant={"outline"} className="rounded-xl">
               <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
             </Button>

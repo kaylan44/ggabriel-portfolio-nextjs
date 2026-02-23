@@ -9,10 +9,10 @@ export async function getRoutesConfig() {
         title: i18n('skills.title'),
         href: `/${locale}/skills`,
       },
-      // {
-      //   title: i18n('projects.title'),
-      //   href: `/${locale}/projects`,
-      // },
+      {
+        title: i18n('projects.title'),
+        href: `/${locale}/projects`,
+      },
       {
         title: i18n('experience.title'),
         href: `/${locale}/experience`,

@@ -74,7 +74,6 @@ export default async function Project({ params }: ProjectPageProps) {
         className="my-8 rounded-md border bg-muted transition-colors"
         priority
       />
-
       <div className="mb-7 ">
         <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">
           Tech Stack
@@ -115,10 +114,49 @@ export default async function Project({ params }: ProjectPageProps) {
                   priority
                 />
               ))}
+              <div style={{ position: 'relative', paddingBottom: 'calc(45.79861111111111% + 41px)', height: '0', width: '100%' }}>
+                <iframe
+                  src={page.arcadeSrc}
+                  title="Desktop : BaliJewelry Overview"
+                  frameBorder="0"
+                  loading="lazy"
+                  allowFullScreen
+                  allow="clipboard-write"
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }}
+                />
+              </div>
             </div>
           </div>
         ))}
       </div>
+
+
+
+      {/*               
+              <div style={{ position: 'relative', paddingBottom: 'calc(62.5% + 41px)', height: '0', width: '100%' }}>
+                <iframe
+                  src="https://demo.arcade.software/xyLgIw9sOKnV0WAUl75M?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true"
+                  title="Mobile : BaliJewelry"
+                  frameBorder="0"
+                  loading="lazy"
+                  allowFullScreen
+                  allow="clipboard-write"
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }}
+                />
+              </div>
+
+              <div style={{ position: 'relative', paddingBottom: 'calc(45.79861111111111% + 41px)', height: '0', width: '100%' }}>
+                <iframe
+                  src="https://demo.arcade.software/1m80zVyE9TuNDnaf6PcI?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true"
+                  title="Desktop : BaliJewelry Overview"
+                  frameBorder="0"
+                  loading="lazy"
+                  allowFullScreen
+                  allow="clipboard-write"
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }}
+                />
+              </div> */}
+
 
       <hr className="mt-12" />
       <div className="flex justify-center py-6 lg:py-10">

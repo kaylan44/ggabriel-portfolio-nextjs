@@ -65,7 +65,9 @@ export type ValidSkills =
   | "SOTI"
   | "Velocity"
   | "Project Management"
-  | "Framer Motion";
+  | "Framer Motion"
+  | "Shopify"
+  | "Liquid";
 
 export type ValidCategory =
   | "Full Stack"
@@ -74,7 +76,8 @@ export type ValidCategory =
   | "UI/UX"
   | "Web Dev"
   | "Mobile Dev"
-  | "DevOps";
+  | "DevOps"
+  | "Shopify";
 
 export type ValidExpType = "Personal" | "Professional";
 
