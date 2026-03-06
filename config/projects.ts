@@ -1,9 +1,13 @@
 import { ValidCategory, ValidExpType, ValidSkills } from "./constants";
 import balijewelryhome from "@/public/projects/balijewelry/balijewelryhome.png";
+import dashdesktop1 from "@/public/projects/dashboard/desktop1.png";
+import dashdesktop2 from "@/public/projects/dashboard/desktop2.png";
+import dashdesktop3 from "@/public/projects/dashboard/desktop3.png";
+import dashmobile from "@/public/projects/dashboard/mobile.png";
 
 interface PagesInfoInterface {
   title: string;
-  imgArr: string[];
+  imgArr: any[];
   description?: string;
   arcadeLink?: string;
   arcadeSrc?: string;
@@ -139,7 +143,49 @@ export const Projects: ProjectInterface[] = [
         "Implementation of international settings (currencies / countries)"
       ],
     },
-  }
+  },
+  {
+    id: "next-dashboard",
+    companyName: "Next Dashboard",
+    type: "Personal",
+    category: ["Mobile Dev", "Full Stack", "UI/UX", "Backend"],
+    shortDescription:
+      "Dashboard & CRM portfolio project built with React and Next.js + SQL.",
+    websiteLink:
+      "https://nextjs-dashboard-app-three-delta.vercel.app/",
+    techStack: ["React", "Next.js", "PostgreSQL"],
+    startDate: new Date("2026-01-15"),
+    endDate: new Date("2022-01-30"),
+    companyLogoImg: dashdesktop1,
+    pagesInfoArr: [
+      {
+        title: "Desktop Overview",
+        description:
+          "Website overview on desktop, showcasing dashboards, invoice management & CRM features with a simple design.",
+        imgArr: [dashdesktop1, dashdesktop2, dashdesktop3],
+      },
+      {
+        title: "Mobile Overview",
+        description:
+          "Website overview on mobile, showcasing the responsive design that adapts to smaller screens while maintaining usability and visual appeal.",
+        imgArr: [dashmobile],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        `A modern full-stack dashboard application built with Next.js, showcasing authentication, server-side data fetching, and dynamic data visualization.
+        The project demonstrates how to build scalable, data-driven interfaces using modern React features, responsive UI components, and a PostgreSQL database.
+        Designed to illustrate best practices for building high-performance web dashboards.`,
+      ],
+      bullets: [
+        "Dynamic dashboard displaying key business metrics",
+        "Full CRUD invoice management system",
+        "PostgreSQL database integration",
+        "Server-side data fetching with Next.js",
+        "Responsive UI optimized for desktop and mobile built with modern Next.js architecture"
+      ],
+    },
+  },
 ];
 
 export const featuredProjects = Projects.slice(0, 3);
