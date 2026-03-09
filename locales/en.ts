@@ -7,9 +7,6 @@ export default {
     'skills.description': "Key skills that define my professional identity.",
     'skills.metadata.description': "Guillaume Gabriel's key skills that define his professional identity.",
 
-    'projects.title': "Projects",
-    'projects.description': "Showcasing impactful projects and technical achievements.",
-    'projects.metadata.description': "Guillaume Gabriel's projects in building web applications.",
 
     'contact.title': "Contact",
     'contact.description': "Let's connect and explore collaborations.",
@@ -40,17 +37,51 @@ export default {
     'skills.grafana.description': "Visualize, monitor, and analyse data from diverse sources through fully customizable dashboards.",
     'skills.kubernetes.description': "Automates deployment, scaling, and management of containerized applications.",
     'skills.helm.description': "Simplify the deployment, configuration, and versioning of applications on Kubernetes through reusable charts.",
-    
+
     'resume.title': "Resume",
     'resume.metadata.description': "Download resume of Guillaume Gabriel.",
     'resume.description': "Please find details about my Resume below.",
     'resume.jobTitle': "Fullstack Dev / DevOPS",
     'resume.informations': "Graduated from ENSEIRB-MATMECA engineer school.",
     'resume.download': "Download",
-    
+
     'experience': 'Experience',
     'studies': 'Studies',
     'siteConfig.jobTitle': "Full Stack Developer",
     'siteConfig.jobDescription': "Fullstack developer passionate about Web development and DevOps. With strong professional experience, I support you in your projects in France or internationally using React/NextJS.",
+
+
+    'projects.title': "Projects",
+    'projects.description': "Showcasing impactful projects and technical achievements.",
+    'projects.metadata.description': "Guillaume Gabriel's projects in building web applications.",
+
+    'projects.all': "All",
+    'projects.personal': "Personal",
+    'projects.professional': "Professional",
+
+    'projects.balijewelry.description': "Online shopify shop selling Handmade silver & gold Jewelry.",
+    'projects.balijewelry.desktopdesc': "Website overview on desktop, showcasing the clean and elegant design that highlights the jewelry products, with intuitive navigation and a seamless shopping experience.",
+    'projects.balijewelry.mobiledesc': "Website overview on mobile, showcasing the responsive design that adapts to smaller screens while maintaining usability and visual appeal.",
+    'projects.balijewelry.detailsdesc': `Development of an online handmade jewelry store built on Shopify, with a mobile-first and conversion-focused approach.
+        The website features a clean, minimalist aesthetic designed to highlight the products, while offering smooth navigation and a simplified purchasing journey.
+        A project combining branding, user experience, and e-commerce performance.`,
+    'projects.balijewelry.bullet1': "Full Shopify setup (catalog, collections, cart, checkout)",
+    'projects.balijewelry.bullet2': "UX optimization and content hierarchy structuring",
+    'projects.balijewelry.bullet3': "Responsive design",
+    'projects.balijewelry.bullet4': "Implementation of international settings (currencies / countries)",
+
+    'projects.nextdashboard.description': "Dashboard & CRM portfolio project built with React and Next.js + SQL.",
+    'projects.nextdashboard.desktopdesc': "Website overview on desktop, showcasing dashboards, invoice management & CRM features with a simple design.",
+    'projects.nextdashboard.mobiledesc': "Website overview on mobile, showcasing the responsive design that adapts to smaller screens while maintaining usability and visual appeal.",
+    'projects.nextdashboard.detailsdesc': `Development of a dashboard and CRM project built with React and Next.js, integrated with a SQL database.
+        The application features a clean, minimalist aesthetic designed to highlight the data, while offering smooth navigation and a simplified user experience.
+        A project combining modern web development practices with robust backend functionality.`,
+    'projects.nextdashboard.bullet1': "Dynamic dashboard displaying key business metrics",
+    'projects.nextdashboard.bullet2': "Full CRUD invoice management system",
+    'projects.nextdashboard.bullet3': "PostgreSQL database integration",
+    'projects.nextdashboard.bullet4': "Server-side data fetching with Next.js",
+    'projects.nextdashboard.bullet5': "Responsive UI optimized for desktop and mobile built with modern Next.js architecture",
+
+
 } as const
 

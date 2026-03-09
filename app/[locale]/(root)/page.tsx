@@ -18,7 +18,7 @@ import { cn } from "@/lib/utils";
 import profileImg from "@/public/profile-img.png";
 import { getCurrentLocale, getI18n } from "@/locales/server";
 import { pagesConfigMetadata } from "@/config/page-metadata";
-import { featuredProjects } from "@/config/projects";
+import { getFeaturedProjects } from "@/config/projects";
 import ProjectCard from "@/components/projects/project-card";
 
 export const metadata: Metadata = {
@@ -36,6 +36,7 @@ export default async function IndexPage() {
   // Translation
   const i18n = await getI18n()
   const pagesConfig = await getPagesConfig();
+  const featuredProjects = await getFeaturedProjects();
 
   // Structured data for personal portfolio
   const personSchema = {

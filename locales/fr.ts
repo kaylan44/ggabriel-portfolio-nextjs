@@ -8,9 +8,6 @@ export default {
     'skills.description': "Compétences clés qui définissent mon identité professionnelle.",
     'skills.metadata.description': "Compétences clés de Guillaume Gabriel qui définissent son identité professionnelle.",
 
-    'projects.title': "Projets",
-    'projects.description': "Présentation de projets impactants et de réalisations techniques.",
-    'projects.metadata.description': "Les projets de Guillaume Gabriel dans le développement d'applications web.",
 
     'contact.title': "Contact",
     'contact.description': "Connectons-nous et explorons des opportunités de collaboration.",
@@ -41,7 +38,7 @@ export default {
     'skills.grafana.description': "Visualiser, surveiller et analyser des données provenant de sources variées grâce à des tableaux de bord personnalisables.",
     'skills.kubernetes.description': "Automatiser le déploiement, la mise à l’échelle et la gestion des applications conteneurisées.",
     'skills.helm.description': "Simplifier le déploiement, la configuration et le versioning des applications sur Kubernetes grâce à des charts réutilisables.",
-    
+
     'resume.title': "CV",
     'resume.metadata.description': "CV à télécharger de Guillaume Gabriel.",
     'resume.description': "Veuillez trouver mon CV détaillé ci-dessous.",
@@ -53,5 +50,37 @@ export default {
     'studies': 'Etudes',
     'siteConfig.jobTitle': "Développeur Full-Stack ",
     'siteConfig.jobDescription': "Développeur Fullstack passionné par le développement Web et le DevOps. Fort de mon expérience en entreprise je vous accompagne dans vos projets en France ou à l'international en React/NextJS.",
+
+    'projects.title': "Projets",
+    'projects.description': "Présentation de projets marquants et de réalisations techniques.",
+    'projects.metadata.description': "Les projets de Guillaume Gabriel dans le développement d'applications web.",
+
+    'projects.all': "Tous",
+    'projects.personal': "Personnel",
+    'projects.professional': "Professionnel",
+
+    'projects.balijewelry.description': "Boutique en ligne Shopify vendant des bijoux artisanaux en argent et en or.",
+    'projects.balijewelry.desktopdesc': "Aperçu du site sur ordinateur, mettant en avant un design épuré et élégant qui valorise les produits de bijouterie, avec une navigation intuitive et une expérience d'achat fluide.",
+    'projects.balijewelry.mobiledesc': "Aperçu du site sur mobile, mettant en avant un design responsive qui s'adapte aux écrans plus petits tout en conservant une bonne ergonomie et un attrait visuel.",
+    'projects.balijewelry.detailsdesc': `Développement d'une boutique en ligne de bijoux faits main construite sur Shopify, avec une approche mobile-first et orientée conversion.
+                                         Le site présente une esthétique épurée et minimaliste conçue pour mettre en valeur les produits, tout en offrant une navigation fluide et un parcours d'achat simplifié.
+                                         Un projet combinant branding, expérience utilisateur et performance e-commerce.`,
+    'projects.balijewelry.bullet1': "Configuration complète de Shopify (catalogue, collections, panier, paiement)",
+    'projects.balijewelry.bullet2': "Optimisation de l’UX et structuration de la hiérarchie du contenu",
+    'projects.balijewelry.bullet3': "Design responsive",
+    'projects.balijewelry.bullet4': "Mise en place des paramètres internationaux (devises / pays)",
+
+    'projects.nextdashboard.description': "Projet portfolio de dashboard et CRM construit avec React, Next.js et SQL.",
+    'projects.nextdashboard.desktopdesc': "Aperçu du site sur ordinateur, présentant des tableaux de bord, la gestion des factures et des fonctionnalités CRM avec un design simple.",
+    'projects.nextdashboard.mobiledesc': "Aperçu du site sur mobile, mettant en avant un design responsive qui s'adapte aux écrans plus petits tout en conservant une bonne ergonomie et un attrait visuel.",
+    'projects.nextdashboard.detailsdesc': `Développement d’un projet de dashboard et CRM construit avec React et Next.js, intégré à une base de données SQL.
+                                           L’application présente une esthétique épurée et minimaliste conçue pour mettre en valeur les données, tout en offrant une navigation fluide et une expérience utilisateur simplifiée.
+                                           Un projet combinant des pratiques modernes de développement web avec des fonctionnalités backend robustes.`,
+    'projects.nextdashboard.bullet1': "Tableau de bord dynamique affichant les principales métriques d’activité",
+    'projects.nextdashboard.bullet2': "Système complet de gestion des factures avec opérations CRUD",
+    'projects.nextdashboard.bullet3': "Intégration d’une base de données PostgreSQL",
+    'projects.nextdashboard.bullet4': "Récupération des données côté serveur avec Next.js",
+    'projects.nextdashboard.bullet5': "Interface responsive optimisée pour ordinateur et mobile, construite avec l’architecture moderne de Next.js",
+
 } as const
 

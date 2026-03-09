@@ -8,7 +8,7 @@ import ProjectDescription from "@/components/projects/project-description";
 import { buttonVariants } from "@/components/ui/button";
 import ChipContainer from "@/components/ui/chip-container";
 import CustomTooltip from "@/components/ui/custom-tooltip";
-import { Projects } from "@/config/projects";
+import { getProjects } from "@/config/projects";
 import { cn, formatDateFromObj } from "@/lib/utils";
 
 interface ProjectPageProps {
@@ -20,7 +20,9 @@ interface ProjectPageProps {
 
 export default async function Project({ params }: ProjectPageProps) {
   const locale = await getCurrentLocale();
-  let project = Projects.find((val) => val.id === params.projectId);
+
+  let projects = await getProjects();
+  let project = projects.find((val) => val.id === params.projectId);
   if (!project) {
     redirect(`/${locale}/projects`);
   }
@@ -114,17 +116,18 @@ export default async function Project({ params }: ProjectPageProps) {
                   priority
                 />
               ))}
+              {page.arcadeSrc && (
               <div style={{ position: 'relative', paddingBottom: 'calc(45.79861111111111% + 41px)', height: '0', width: '100%' }}>
                 <iframe
                   src={page.arcadeSrc}
                   title="Desktop : BaliJewelry Overview"
-                  frameBorder="0"
                   loading="lazy"
                   allowFullScreen
                   allow="clipboard-write"
                   style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }}
                 />
               </div>
+              )}
             </div>
           </div>
         ))}
