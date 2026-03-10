@@ -26,6 +26,7 @@ import {
   SunMedium,
   Trash,
   User,
+  Video,
   X,
 } from "lucide-react";
 import { AiFillStar } from "react-icons/ai";
@@ -86,6 +87,7 @@ export const Icons = {
   post: FileText,
   page: File,
   media: Image,
+  video: Video,
   settings: Settings,
   billing: CreditCard,
   ellipsis: MoreVertical,

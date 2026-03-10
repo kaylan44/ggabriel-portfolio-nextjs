@@ -5,6 +5,10 @@ import dashdesktop1 from "@/public/projects/dashboard/desktop1.png";
 import dashdesktop2 from "@/public/projects/dashboard/desktop2.png";
 import dashdesktop3 from "@/public/projects/dashboard/desktop3.png";
 import dashmobile from "@/public/projects/dashboard/mobile.png";
+import andromedaHomepage from "@/public/projects/andromeda/andromeda-homepage.png";
+import andromedadesktop1 from "@/public/projects/andromeda/andromeda-desktop1.png";
+import andromedadesktop2 from "@/public/projects/andromeda/andromeda-desktop2.png";
+import andromedamobilefolio from "@/public/projects/andromeda/andromeda-mobile-folio.png";
 
 interface PagesInfoInterface {
   title: string;
@@ -12,6 +16,7 @@ interface PagesInfoInterface {
   description?: string;
   arcadeLink?: string;
   arcadeSrc?: string;
+  videoSrc?: string;
 }
 
 interface DescriptionDetailsInterface {
@@ -25,7 +30,7 @@ export interface ProjectInterface {
   companyName: string;
   category: ValidCategory[];
   shortDescription: string;
-  websiteLink?: string;
+  websiteLink: string;
   githubLink?: string;
   techStack: ValidSkills[];
   startDate: Date;
@@ -130,6 +135,47 @@ export async function createProjects(): Promise<ProjectInterface[]> {
 
   return (
     [
+      {
+        id: "andromeda",
+        companyName: "Andromeda Italian Restaurant",
+        type: "Personal",
+        category: ["Mobile Dev", "Full Stack", "UI/UX"],
+        shortDescription:
+          i18n('projects.andromeda.description'),
+        websiteLink:
+          "https://andromeda-italia.vercel.app/",
+        techStack: ["React", "Next.js", "Tailwind CSS"],
+        startDate: new Date("2026-03-01"),
+        endDate: new Date("2022-03-10"),
+        companyLogoImg: andromedaHomepage,
+        pagesInfoArr: [
+          {
+            title: "Desktop Overview",
+            description:
+              i18n('projects.andromeda.desktopdesc'),
+            imgArr: [andromedaHomepage, andromedadesktop1, andromedadesktop2],
+            videoSrc: "/projects/andromeda/andromeda-video-desktop.mp4",
+          },
+          {
+            title: "Mobile Overview",
+            description:
+              i18n('projects.andromeda.mobiledesc'),
+            imgArr: [andromedamobilefolio],
+            videoSrc: "/projects/andromeda/andromeda-video-mobile.mp4",
+          },
+        ],
+        descriptionDetails: {
+          paragraphs: [
+            i18n('projects.andromeda.detailsdesc'),
+          ],
+          bullets: [
+            i18n('projects.andromeda.bullet1'),
+            i18n('projects.andromeda.bullet2'),
+            i18n('projects.andromeda.bullet3'),
+            i18n('projects.andromeda.bullet4')
+          ],
+        },
+      },
       {
         id: "bali-jewelry",
         companyName: "Bali Jewelry",

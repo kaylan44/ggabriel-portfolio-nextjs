@@ -85,6 +85,21 @@ export default async function Project({ params }: ProjectPageProps) {
 
       <div className="mb-7 ">
         <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">
+          Link
+        </h2>
+        {/* {<project.descriptionComponent />} */}
+        <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-3">
+          <Link className="text-blue-600 hover:text-blue-800 underline"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={project.websiteLink}>
+            {project.websiteLink}
+          </Link>
+        </h3>
+      </div>
+
+      <div className="mb-7 ">
+        <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">
           Description
         </h2>
         {/* {<project.descriptionComponent />} */}
@@ -95,16 +110,18 @@ export default async function Project({ params }: ProjectPageProps) {
       </div>
 
       <div className="mb-7 ">
-        <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-5">
+        <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-3">
           Page Info
         </h2>
         {project.pagesInfoArr.map((page, ind) => (
           <div key={ind}>
-            <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-3">
+            <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-5">
               <Icons.star className="h-5 w-5 mr-2" /> {page.title}
             </h3>
             <div>
               <p>{page.description}</p>
+
+              {/* ------ Project images ------ */}
               {page.imgArr.map((img, ind) => (
                 <Image
                   src={img}
@@ -116,17 +133,34 @@ export default async function Project({ params }: ProjectPageProps) {
                   priority
                 />
               ))}
+
+
+              {/* ------ Project videos ------ */}
+              {page.videoSrc && (
+                <div>
+                  <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-3">
+                    <Icons.video className="h-5 w-5 mr-2" /> Video
+                  </h3>
+                  <video controls muted loop playsInline className="w-full h-auto">
+                    <source src={page.videoSrc} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              )}
+
+
+              {/* ------ Project arcade demo ------ */}
               {page.arcadeSrc && (
-              <div style={{ position: 'relative', paddingBottom: 'calc(45.79861111111111% + 41px)', height: '0', width: '100%' }}>
-                <iframe
-                  src={page.arcadeSrc}
-                  title="Desktop : BaliJewelry Overview"
-                  loading="lazy"
-                  allowFullScreen
-                  allow="clipboard-write"
-                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }}
-                />
-              </div>
+                <div style={{ position: 'relative', paddingBottom: 'calc(45.79861111111111% + 41px)', height: '0', width: '100%' }}>
+                  <iframe
+                    src={page.arcadeSrc}
+                    title="Desktop : BaliJewelry Overview"
+                    loading="lazy"
+                    allowFullScreen
+                    allow="clipboard-write"
+                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }}
+                  />
+                </div>
               )}
             </div>
           </div>

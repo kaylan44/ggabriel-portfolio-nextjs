@@ -59,6 +59,22 @@ export default {
     'projects.personal': "Personnel",
     'projects.professional': "Professionnel",
 
+    'projects.andromeda.description': "Site vitrine premium pour un restaurant italien, conçu et développé avec React et Next.js.",
+
+    'projects.andromeda.desktopdesc': "Aperçu de la version desktop du site mettant en avant un design sombre élégant, des visuels immersifs et une présentation soignée de l’univers et de la carte du restaurant.",
+
+    'projects.andromeda.mobiledesc': "Aperçu de la version mobile illustrant un design entièrement responsive, pensé pour offrir une expérience fluide et immersive sur tous les écrans.",
+
+    'projects.andromeda.detailsdesc': `Conception et développement d’un site vitrine moderne pour un restaurant italien réalisé avec React et Next.js.
+        L’objectif du projet était de créer une présence digitale élégante et immersive à travers un design sombre et cinématographique, une typographie raffinée et une mise en valeur visuelle de l’expérience gastronomique.
+        Le site met en avant l’identité du restaurant, son atmosphère et sa cuisine, tout en garantissant une navigation fluide et une expérience utilisateur optimisée sur desktop comme sur mobile.`,
+
+    'projects.andromeda.bullet1': "Interface élégante au design sombre inspiré des restaurants haut de gamme",
+    'projects.andromeda.bullet2': "Hero immersif avec typographie marquante et visuels cinématographiques",
+    'projects.andromeda.bullet3': "Design responsive optimisé pour tous les appareils",
+    'projects.andromeda.bullet4': "Développement moderne avec React et Next.js",
+    'projects.andromeda.bullet5': "Navigation fluide mettant en valeur l’univers et l’expérience du restaurant",
+
     'projects.balijewelry.description': "Boutique en ligne Shopify vendant des bijoux artisanaux en argent et en or.",
     'projects.balijewelry.desktopdesc': "Aperçu du site sur ordinateur, mettant en avant un design épuré et élégant qui valorise les produits de bijouterie, avec une navigation intuitive et une expérience d'achat fluide.",
     'projects.balijewelry.mobiledesc': "Aperçu du site sur mobile, mettant en avant un design responsive qui s'adapte aux écrans plus petits tout en conservant une bonne ergonomie et un attrait visuel.",
