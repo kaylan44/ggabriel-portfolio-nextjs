@@ -1,4 +1,5 @@
 import "./globals.css";
+import type { Metadata } from "next";
 
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Inter as FontSans } from "next/font/google";
@@ -27,7 +28,7 @@ interface RootLayoutProps {
   children: React.ReactNode;
 }
 
-export const metadata = {
+export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.name,
@@ -72,9 +73,8 @@ export const metadata = {
     creator: `@${siteConfig.username}`,
   },
   icons: {
-    icon: siteConfig.iconIco,
-    shortcut: siteConfig.logoIcon,
-    apple: siteConfig.logoIcon,
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
   },
   manifest: `${siteConfig.url}/en/site.webmanifest`,
   alternates: {
