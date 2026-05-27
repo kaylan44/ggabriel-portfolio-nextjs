@@ -98,5 +98,16 @@ export default {
     'projects.nextdashboard.bullet4': "Récupération des données côté serveur avec Next.js",
     'projects.nextdashboard.bullet5': "Interface responsive optimisée pour ordinateur et mobile, construite avec l’architecture moderne de Next.js",
 
+    'projects.swanlessons.description': "Landing page de cours de langues en ligne pour une enseignante certifiée de français et d’anglais.",
+    'projects.swanlessons.desktopdesc': "Aperçu desktop mettant en avant un hero chaleureux orienté conversion, des sections de service claires, des témoignages et des CTA WhatsApp efficaces.",
+    'projects.swanlessons.mobiledesc': "Aperçu mobile illustrant une mise en page responsive, une typographie lisible et un accès rapide à la réservation d’un cours d’essai.",
+    'projects.swanlessons.detailsdesc': `Conception et développement d’un site vitrine bilingue pensé pour présenter clairement l’offre et convertir les visiteurs en demandes de cours d’essai.
+        Le projet met l’accent sur les éléments de confiance (qualifications, avis, tarifs transparents) et une identité visuelle chaleureuse adaptée à l’apprentissage des langues en ligne.
+        L’expérience est optimisée desktop et mobile avec un placement stratégique des CTA et une navigation fluide entre les sections.`,
+    'projects.swanlessons.bullet1': "Structure orientée conversion avec proposition de valeur claire et parcours centré sur l’essai gratuit",
+    'projects.swanlessons.bullet2': "Positionnement bilingue et contenus adaptés aux apprenants français/anglais",
+    'projects.swanlessons.bullet3': "Intégration d’éléments de réassurance : certifications, avis clients et tarification claire",
+    'projects.swanlessons.bullet4': "Interface responsive développée avec React, Next.js et Tailwind CSS",
+
 } as const
 

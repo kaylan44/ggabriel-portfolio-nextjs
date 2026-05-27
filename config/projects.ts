@@ -9,6 +9,11 @@ import andromedaHomepage from "@/public/projects/andromeda/andromeda-homepage.pn
 import andromedadesktop1 from "@/public/projects/andromeda/andromeda-desktop1.png";
 import andromedadesktop2 from "@/public/projects/andromeda/andromeda-desktop2.png";
 import andromedamobilefolio from "@/public/projects/andromeda/andromeda-mobile-folio.png";
+import swanHomepage from "@/public/projects/swanlessons/swan-homepage.png";
+import swanDesktop1 from "@/public/projects/swanlessons/swan-desktop1.png";
+import swanDesktop2 from "@/public/projects/swanlessons/swan-desktop2.png";
+import swanMobile from "@/public/projects/swanlessons/swan-mobile.png";
+
 
 interface PagesInfoInterface {
   title: string;
@@ -135,6 +140,45 @@ export async function createProjects(): Promise<ProjectInterface[]> {
 
   return (
     [
+      {
+        id: "swan-lessons",
+        companyName: "Swan Lessons",
+        type: "Personal",
+        category: ["Frontend", "UI/UX", "Web Dev"],
+        shortDescription:
+          i18n('projects.swanlessons.description'),
+        websiteLink:
+          "https://swanlessons.vercel.app/",
+        techStack: ["React", "Next.js", "Tailwind CSS"],
+        startDate: new Date("2026-04-01"),
+        endDate: new Date("2026-04-15"),
+        companyLogoImg: swanHomepage,
+        pagesInfoArr: [
+          {
+            title: "Desktop Overview",
+            description:
+              i18n('projects.swanlessons.desktopdesc'),
+            imgArr: [swanDesktop1, swanDesktop2],
+          },
+          {
+            title: "Mobile Overview",
+            description:
+              i18n('projects.swanlessons.mobiledesc'),
+            imgArr: [swanMobile],
+          },
+        ],
+        descriptionDetails: {
+          paragraphs: [
+            i18n('projects.swanlessons.detailsdesc'),
+          ],
+          bullets: [
+            i18n('projects.swanlessons.bullet1'),
+            i18n('projects.swanlessons.bullet2'),
+            i18n('projects.swanlessons.bullet3'),
+            i18n('projects.swanlessons.bullet4')
+          ],
+        },
+      },
       {
         id: "andromeda",
         companyName: "Andromeda Italian Restaurant",

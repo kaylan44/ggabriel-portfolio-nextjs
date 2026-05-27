@@ -100,6 +100,17 @@ export default {
     'projects.nextdashboard.bullet4': "Server-side data fetching with Next.js",
     'projects.nextdashboard.bullet5': "Responsive UI optimized for desktop and mobile built with modern Next.js architecture",
 
+    'projects.swanlessons.description': "Online language-teaching landing page for a certified French and English teacher.",
+    'projects.swanlessons.desktopdesc': "Desktop overview showing a warm, conversion-focused hero, clear service sections, testimonials, and frictionless WhatsApp call-to-actions.",
+    'projects.swanlessons.mobiledesc': "Mobile overview highlighting responsive layouts, readable typography, and quick access to free-trial booking from smaller screens.",
+    'projects.swanlessons.detailsdesc': `Design and development of a bilingual teaching website built to present services clearly and convert visitors into trial bookings.
+        The project emphasizes trust-building sections (qualifications, reviews, transparent pricing) and a friendly visual identity adapted to online language learning.
+        The experience is optimized for both desktop and mobile with strong CTA placement and smooth section-to-section navigation.`,
+    'projects.swanlessons.bullet1': "Conversion-focused landing structure with clear value proposition and trial-first journey",
+    'projects.swanlessons.bullet2': "Bilingual positioning and content blocks tailored to French/English learners",
+    'projects.swanlessons.bullet3': "Trust elements integration: teacher credentials, social proof, and transparent pricing",
+    'projects.swanlessons.bullet4': "Responsive UI built with React, Next.js, and Tailwind CSS",
+
 
 } as const
 
