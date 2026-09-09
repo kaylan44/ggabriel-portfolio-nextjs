@@ -3,7 +3,7 @@ export const siteConfig = {
   authorName: "Guillaume Gabriel",
   username: "guillaumeGabriel",
   description:
-    "Guillaume Gabriel's portfolio - A modern, responsive Next.js portfolio for developers. This open-source template can be customized to showcase your own skills, projects, and professional experience.",
+    "Guillaume Gabriel | Fullstack Developer — React, Next.js, DevOps. Web development projects and professional experience. Open to opportunities worldwide.",
 //  jobTitle: "Full Stack Developer",
 //  jobDescription: "Développeur Fullstack passioné par le développement Web et le DevOps. Fort de mon expérience en entreprise je vous accompagne dans vos projets en France ou à l'international en React/NextJS ",
   url: "https://ggabriel-portfolio-nextjs.vercel.app",
