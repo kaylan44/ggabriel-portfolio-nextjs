@@ -67,7 +67,8 @@ export type ValidSkills =
   | "Project Management"
   | "Framer Motion"
   | "Shopify"
-  | "Liquid";
+  | "Liquid"
+  | "ECharts";
 
 export type ValidCategory =
   | "Full Stack"
@@ -77,7 +78,8 @@ export type ValidCategory =
   | "Web Dev"
   | "Mobile Dev"
   | "DevOps"
-  | "Shopify";
+  | "Shopify"
+  | "Data Viz";
 
 export type ValidExpType = "Personal" | "Professional";
 

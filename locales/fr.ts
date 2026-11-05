@@ -109,5 +109,16 @@ export default {
     'projects.swanlessons.bullet3': "Intégration d’éléments de réassurance : certifications, avis clients et tarification claire",
     'projects.swanlessons.bullet4': "Interface responsive développée avec React, Next.js et Tailwind CSS",
 
+    'projects.dataviz.description': "Plateforme interactive de visualisation de données pour l'analyse des marchés énergétiques, développée avec Vue.js et ECharts.",
+    'projects.dataviz.desktopdesc': "Aperçu desktop présentant le tableau de bord principal avec suivi de portefeuille, graphiques de matières premières et indicateurs de performance clés.",
+    'projects.dataviz.mapdesc': "Vue cartographique permettant une analyse spatiale de la distribution des données énergétiques et des insights de marché régionaux.",
+    'projects.dataviz.detailsdesc': `Développement d'une plateforme interactive de visualisation de données orientée vers l'analyse des marchés énergétiques.
+        L'application s'appuie sur Vue.js pour une architecture single-page responsive et ECharts pour des composants graphiques riches et interactifs.
+        Le dashboard intègre plusieurs vues — suivi de portefeuille, monitoring des prix du pétrole et du GNL, et cartographie géographique — pour fournir des insights opérationnels sur les marchés.`,
+    'projects.dataviz.bullet1': "Graphiques interactifs riches avec ECharts : chandeliers, lignes et barres",
+    'projects.dataviz.bullet2': "Vue cartographique pour l'analyse spatiale des données de marché",
+    'projects.dataviz.bullet3': "Suivi des performances de portefeuille et monitoring des prix des matières premières",
+    'projects.dataviz.bullet4': "Architecture single-page responsive développée avec Vue.js",
+
 } as const
 
