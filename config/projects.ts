@@ -13,6 +13,10 @@ import swanHomepage from "@/public/projects/swanlessons/swan-homepage.png";
 import swanDesktop1 from "@/public/projects/swanlessons/swan-desktop1.png";
 import swanDesktop2 from "@/public/projects/swanlessons/swan-desktop2.png";
 import swanMobile from "@/public/projects/swanlessons/swan-mobile.png";
+import vocabioHomepage from "@/public/projects/vocabio/vocabio-homepage.png";
+import vocabioDesktop1 from "@/public/projects/vocabio/vocabio-desktop1.png";
+import vocabioDesktop2 from "@/public/projects/vocabio/vocabio-desktop2.png";
+import vocabioMobile from "@/public/projects/vocabio/vocabio-mobile.png";
 import dataVizPortfolio from "@/public/projects/data-viz/data-viz-portfolio.png";
 import dataVizOilLng from "@/public/projects/data-viz/data-viz-oil-lng.png";
 import dataVizMap from "@/public/projects/data-viz/data-viz-map.png";
@@ -143,6 +147,47 @@ export async function createProjects(): Promise<ProjectInterface[]> {
 
   return (
     [
+      {
+        id: "vocabio",
+        companyName: "Vocabio",
+        type: "Personal",
+        category: ["Full Stack", "Backend", "Mobile Dev"],
+        shortDescription:
+          i18n('projects.vocabio.description'),
+        websiteLink:
+          "https://vocabio.vercel.app/",
+        githubLink: "https://github.com/kaylan44/vocabio-backend",
+        techStack: ["React Native", "Node.js", "express.js", "Prisma", "Supabase", "PostgreSQL", "Socket.io", "Typescript", "Jest"],
+        startDate: new Date("2025-09-01"),
+        endDate: new Date("2026-10-01"),
+        companyLogoImg: vocabioHomepage,
+        pagesInfoArr: [
+          {
+            title: "Desktop Overview",
+            description:
+              i18n('projects.vocabio.desktopdesc'),
+            imgArr: [vocabioHomepage, vocabioDesktop1, vocabioDesktop2],
+          },
+          {
+            title: "Mobile Overview",
+            description:
+              i18n('projects.vocabio.mobiledesc'),
+            imgArr: [vocabioMobile],
+          },
+        ],
+        descriptionDetails: {
+          paragraphs: [
+            i18n('projects.vocabio.detailsdesc'),
+          ],
+          bullets: [
+            i18n('projects.vocabio.bullet1'),
+            i18n('projects.vocabio.bullet2'),
+            i18n('projects.vocabio.bullet3'),
+            i18n('projects.vocabio.bullet4'),
+            i18n('projects.vocabio.bullet5'),
+          ],
+        },
+      },            
       {
         id: "data-viz",
         companyName: "DataViz",

@@ -109,6 +109,20 @@ export default {
     'projects.swanlessons.bullet3': "Intégration d’éléments de réassurance : certifications, avis clients et tarification claire",
     'projects.swanlessons.bullet4': "Interface responsive développée avec React, Next.js et Tailwind CSS",
 
+    'projects.vocabio.description': "Application de quiz de vocabulaire full-stack (espagnol & indonésien) avec messagerie temps réel, statistiques et articles — focus sur l'architecture backend.",
+    'projects.vocabio.desktopdesc': "Aperçu web de l'app : écran d'accueil avec les modes quiz bidirectionnels (Français→Espagnol, Espagnol→Français), et le quiz en cours avec questions à 4 choix taggées par catégorie grammaticale et niveau CECRL.",
+    'projects.vocabio.mobiledesc': "Aperçu mobile de l'écran compte avec statistiques détaillées par mode, catégorie, niveau et mots les plus ratés.",
+    'projects.vocabio.articlesdesc': "Section articles affichant des actualités Easy-Spanish avec filtres par niveau, traduction au tap sur les phrases clés et lecture audio pour les utilisateurs connectés.",
+
+    'projects.vocabio.detailsdesc': `Application d'apprentissage du vocabulaire full-stack conçue avec React Native / Expo côté mobile et un backend Node.js / Express déployé sur Railway.
+        L'accent a été mis sur l'architecture backend : design en couches strictes (routes → services → repositories) avec Prisma ORM, Supabase PostgreSQL, authentification JWT et messagerie temps réel via Socket.io.
+        L'app couvre l'espagnol (630 mots, A1–B1) et l'indonésien (224 mots), suit la maîtrise de chaque mot dans les deux sens de traduction et agrège des statistiques de quiz détaillées par catégorie, niveau et mode.`,
+
+    'projects.vocabio.bullet1': "Architecture backend en couches (routes / services / repositories) avec frontières de dépendances strictes vérifiées par des tests automatisés",
+    'projects.vocabio.bullet2': "Messagerie 1:1 temps réel via Socket.io avec UI optimiste, indicateur de frappe et accusés de lecture",
+    'projects.vocabio.bullet3': "Stockage idempotent des sessions de quiz avec suivi de maîtrise par mot et par direction (nouveau → vu → maîtrisé) calculé côté serveur",
+    'projects.vocabio.bullet4': "Authentification JWT via Supabase Auth (Google SSO) vérifiée côté serveur avec la clé publique — aucun appel réseau par requête",
+    'projects.vocabio.bullet5': "Synchronisation d'articles Easy-Spanish (API REST WordPress) avec stockage audio MP3 en BYTEA PostgreSQL et segments traduits au tap",
     'projects.dataviz.description': "Plateforme interactive de visualisation de données pour l'analyse des marchés énergétiques, développée avec Vue.js et ECharts.",
     'projects.dataviz.desktopdesc': "Aperçu desktop présentant le tableau de bord principal avec suivi de portefeuille, graphiques de matières premières et indicateurs de performance clés.",
     'projects.dataviz.mapdesc': "Vue cartographique permettant une analyse spatiale de la distribution des données énergétiques et des insights de marché régionaux.",
