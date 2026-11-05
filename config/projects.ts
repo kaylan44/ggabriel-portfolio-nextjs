@@ -157,7 +157,7 @@ export async function createProjects(): Promise<ProjectInterface[]> {
         websiteLink:
           "https://vocabio.vercel.app/",
         githubLink: "https://github.com/kaylan44/vocabio-backend",
-        techStack: ["React Native", "Node.js", "express.js", "Prisma", "Supabase", "PostgreSQL", "Socket.io", "Typescript", "Jest"],
+        techStack: ["React Native", "Node.js", "express.js", "PostgreSQL", "Socket.io", "Typescript"],
         startDate: new Date("2025-09-01"),
         endDate: new Date("2026-10-01"),
         companyLogoImg: vocabioHomepage,
