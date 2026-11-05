@@ -120,11 +120,11 @@ export default {
         The focus was on backend architecture: a clean layered design (routes → services → repositories) with Prisma ORM, Supabase PostgreSQL, JWT auth and Socket.io real-time messaging.
         The app supports Spanish (630 words, A1–B1) and Indonesian (224 words), tracks per-word mastery in both translation directions, and aggregates detailed quiz statistics per category, level and mode.`,
 
-    'projects.vocabio.bullet1': "Layered backend architecture (routes / services / repositories) with strict dependency boundaries enforced by automated tests",
+    'projects.vocabio.bullet1': "Layered backend architecture (routes / services / repositories) with strict dependency boundaries",
     'projects.vocabio.bullet2': "Real-time 1:1 messaging via Socket.io with optimistic UI, typing indicators and read receipts",
-    'projects.vocabio.bullet3': "Idempotent quiz session storage with per-word, per-direction mastery tracking (new → seen → mastered) computed server-side",
-    'projects.vocabio.bullet4': "JWT authentication via Supabase Auth (Google SSO) with server-side verification using the public key — no network call per request",
-    'projects.vocabio.bullet5': "Easy-Spanish article sync (WordPress REST API) with MP3 audio storage in PostgreSQL BYTEA and tap-to-translate segments",
+    'projects.vocabio.bullet3': "Per-word, per-direction mastery tracking (new → seen → mastered) computed server-side",
+    'projects.vocabio.bullet4': "JWT via Supabase Auth (Google SSO) with server-side verification — no network call per request",
+    'projects.vocabio.bullet5': "Easy-Spanish articles synced from WordPress with MP3 audio and tap-to-translate",
     'projects.dataviz.description': "Interactive data visualization platform for energy market analysis, built with Vue.js and ECharts.",
     'projects.dataviz.desktopdesc': "Desktop overview showcasing the main dashboard with market portfolio tracking, commodity charts, and key performance indicators.",
     'projects.dataviz.mapdesc': "Geographical map view enabling spatial analysis of energy data distribution and regional market insights.",
