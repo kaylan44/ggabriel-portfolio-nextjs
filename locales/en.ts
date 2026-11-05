@@ -111,12 +111,12 @@ export default {
     'projects.swanlessons.bullet3': "Trust elements integration: teacher credentials, social proof, and transparent pricing",
     'projects.swanlessons.bullet4': "Responsive UI built with React, Next.js, and Tailwind CSS",
 
-    'projects.vocabio.description': "Full-stack vocabulary quiz app (Spanish & Indonesian) with real-time messaging, stats and articles — focused on backend architecture.",
-    'projects.vocabio.desktopdesc': "Web overview of the app: home screen with bidirectional quiz modes (French→Spanish, Spanish→French), and the live quiz with 4-choice questions tagged by grammatical category and CEFR level.",
-    'projects.vocabio.mobiledesc': "Mobile overview showing the account screen with detailed quiz statistics by mode, category, level, and most-missed words.",
-    'projects.vocabio.articlesdesc': "Articles section displaying Easy-Spanish news with level filters, tap-to-translate on key phrases, and read-aloud audio for signed-in users.",
+    'projects.vocabio.description': "Mobile vocabulary quiz app (Spanish & Indonesian) with real-time messaging, detailed stats and Spanish articles — focused on backend architecture.",
+    'projects.vocabio.desktopdesc': "Login screen, home with bidirectional quiz modes (French→Spanish / Spanish→French), and a live quiz question with 4 choices tagged by grammatical category and CEFR level.",
+    'projects.vocabio.mobiledesc': "Language selection, vocabulary browser by category, and an Easy-Spanish article reader with tap-to-translate on underlined phrases.",
+    'projects.vocabio.articlesdesc': "Account screen with detailed quiz statistics (by mode, category and CEFR level, plus most-missed words), and the real-time 1:1 messaging interface.",
 
-    'projects.vocabio.detailsdesc': `Full-stack vocabulary learning application built with React Native / Expo on the frontend and a custom Node.js / Express backend deployed on Railway.
+    'projects.vocabio.detailsdesc': `Mobile vocabulary learning application built with React Native / Expo and a custom Node.js / Express backend deployed on Railway.
         The focus was on backend architecture: a clean layered design (routes → services → repositories) with Prisma ORM, Supabase PostgreSQL, JWT auth and Socket.io real-time messaging.
         The app supports Spanish (630 words, A1–B1) and Indonesian (224 words), tracks per-word mastery in both translation directions, and aggregates detailed quiz statistics per category, level and mode.`,
 
