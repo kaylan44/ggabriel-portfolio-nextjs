@@ -158,7 +158,7 @@ export async function createProjects(): Promise<ProjectInterface[]> {
         startDate: new Date("2026-09-01"),
         endDate: new Date("2026-10-01"),
         companyLogoImg: dataVizPortfolio,
-        cardImagePosition: "object-contain",
+        cardImagePosition: "object-left object-cover",
         pagesInfoArr: [
           {
             title: "Dashboard Overview",
