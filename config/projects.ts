@@ -17,6 +17,9 @@ import vocabioHomepage from "@/public/projects/vocabio/vocabio-homepage.png";
 import vocabioDesktop1 from "@/public/projects/vocabio/vocabio-desktop1.png";
 import vocabioDesktop2 from "@/public/projects/vocabio/vocabio-desktop2.png";
 import vocabioMobile from "@/public/projects/vocabio/vocabio-mobile.png";
+import dataVizPortfolio from "@/public/projects/data-viz/data-viz-portfolio.png";
+import dataVizOilLng from "@/public/projects/data-viz/data-viz-oil-lng.png";
+import dataVizMap from "@/public/projects/data-viz/data-viz-map.png";
 
 
 interface PagesInfoInterface {
@@ -184,11 +187,51 @@ export async function createProjects(): Promise<ProjectInterface[]> {
             i18n('projects.vocabio.bullet5'),
           ],
         },
+      },            
+      {
+        id: "data-viz",
+        companyName: "DataViz",
+        type: "Professional",
+        category: ["Frontend", "Data Viz", "UI/UX"],
+        shortDescription:
+          i18n('projects.dataviz.description'),
+        websiteLink:
+          "https://data-viz-delta.vercel.app/",
+        githubLink: "https://github.com/kaylan44/data-viz",
+        techStack: ["Vue.js", "ECharts"],
+        startDate: new Date("2026-09-01"),
+        endDate: new Date("2026-10-01"),
+        companyLogoImg: dataVizPortfolio,
+        pagesInfoArr: [
+          {
+            title: "Dashboard Overview",
+            description:
+              i18n('projects.dataviz.desktopdesc'),
+            imgArr: [dataVizPortfolio, dataVizOilLng],
+          },
+          {
+            title: "Map View",
+            description:
+              i18n('projects.dataviz.mapdesc'),
+            imgArr: [dataVizMap],
+          },
+        ],
+        descriptionDetails: {
+          paragraphs: [
+            i18n('projects.dataviz.detailsdesc'),
+          ],
+          bullets: [
+            i18n('projects.dataviz.bullet1'),
+            i18n('projects.dataviz.bullet2'),
+            i18n('projects.dataviz.bullet3'),
+            i18n('projects.dataviz.bullet4'),
+          ],
+        },
       },
       {
         id: "swan-lessons",
         companyName: "Swan Lessons",
-        type: "Personal",
+        type: "Professional",
         category: ["Frontend", "UI/UX", "Web Dev"],
         shortDescription:
           i18n('projects.swanlessons.description'),
@@ -268,7 +311,7 @@ export async function createProjects(): Promise<ProjectInterface[]> {
       {
         id: "bali-jewelry",
         companyName: "Bali Jewelry",
-        type: "Personal",
+        type: "Professional",
         category: ["Mobile Dev", "Full Stack", "UI/UX", "Shopify"],
         shortDescription:
           i18n('projects.balijewelry.description'),
@@ -306,46 +349,46 @@ export async function createProjects(): Promise<ProjectInterface[]> {
           ],
         },
       },
-      {
-        id: "next-dashboard",
-        companyName: "Next Dashboard",
-        type: "Personal",
-        category: ["Mobile Dev", "Full Stack", "UI/UX", "Backend"],
-        shortDescription:
-          i18n('projects.nextdashboard.description'),
-        websiteLink:
-          "https://nextjs-dashboard-app-three-delta.vercel.app/",
-        techStack: ["React", "Next.js", "PostgreSQL"],
-        startDate: new Date("2026-01-15"),
-        endDate: new Date("2022-01-30"),
-        companyLogoImg: dashdesktop1,
-        pagesInfoArr: [
-          {
-            title: "Desktop Overview",
-            description:
-              i18n('projects.nextdashboard.desktopdesc'),
-            imgArr: [dashdesktop1, dashdesktop2, dashdesktop3],
-          },
-          {
-            title: "Mobile Overview",
-            description:
-              i18n('projects.nextdashboard.mobiledesc'),
-            imgArr: [dashmobile],
-          },
-        ],
-        descriptionDetails: {
-          paragraphs: [
-            i18n('projects.nextdashboard.detailsdesc'),
-          ],
-          bullets: [
-            i18n('projects.nextdashboard.bullet1'),
-            i18n('projects.nextdashboard.bullet2'),
-            i18n('projects.nextdashboard.bullet3'),
-            i18n('projects.nextdashboard.bullet4'),
-            i18n('projects.nextdashboard.bullet5')
-          ],
-        },
-      },
+      // {
+      //   id: "next-dashboard",
+      //   companyName: "Next Dashboard",
+      //   type: "Personal",
+      //   category: ["Mobile Dev", "Full Stack", "UI/UX", "Backend"],
+      //   shortDescription:
+      //     i18n('projects.nextdashboard.description'),
+      //   websiteLink:
+      //     "https://nextjs-dashboard-app-three-delta.vercel.app/",
+      //   techStack: ["React", "Next.js", "PostgreSQL"],
+      //   startDate: new Date("2026-01-15"),
+      //   endDate: new Date("2022-01-30"),
+      //   companyLogoImg: dashdesktop1,
+      //   pagesInfoArr: [
+      //     {
+      //       title: "Desktop Overview",
+      //       description:
+      //         i18n('projects.nextdashboard.desktopdesc'),
+      //       imgArr: [dashdesktop1, dashdesktop2, dashdesktop3],
+      //     },
+      //     {
+      //       title: "Mobile Overview",
+      //       description:
+      //         i18n('projects.nextdashboard.mobiledesc'),
+      //       imgArr: [dashmobile],
+      //     },
+      //   ],
+      //   descriptionDetails: {
+      //     paragraphs: [
+      //       i18n('projects.nextdashboard.detailsdesc'),
+      //     ],
+      //     bullets: [
+      //       i18n('projects.nextdashboard.bullet1'),
+      //       i18n('projects.nextdashboard.bullet2'),
+      //       i18n('projects.nextdashboard.bullet3'),
+      //       i18n('projects.nextdashboard.bullet4'),
+      //       i18n('projects.nextdashboard.bullet5')
+      //     ],
+      //   },
+      // },
     ]
   )
 }

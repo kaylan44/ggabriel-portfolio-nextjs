@@ -125,6 +125,16 @@ export default {
     'projects.vocabio.bullet3': "Idempotent quiz session storage with per-word, per-direction mastery tracking (new → seen → mastered) computed server-side",
     'projects.vocabio.bullet4': "JWT authentication via Supabase Auth (Google SSO) with server-side verification using the public key — no network call per request",
     'projects.vocabio.bullet5': "Easy-Spanish article sync (WordPress REST API) with MP3 audio storage in PostgreSQL BYTEA and tap-to-translate segments",
+    'projects.dataviz.description': "Interactive data visualization platform for energy market analysis, built with Vue.js and ECharts.",
+    'projects.dataviz.desktopdesc': "Desktop overview showcasing the main dashboard with market portfolio tracking, commodity charts, and key performance indicators.",
+    'projects.dataviz.mapdesc': "Geographical map view enabling spatial analysis of energy data distribution and regional market insights.",
+    'projects.dataviz.detailsdesc': `Development of an interactive data visualization platform focused on energy market analytics.
+        The application leverages Vue.js for a responsive single-page architecture and ECharts for rich, interactive chart components.
+        The dashboard integrates multiple data views — portfolio tracking, oil & LNG price monitoring, and geographical mapping — to deliver actionable market intelligence.`,
+    'projects.dataviz.bullet1': "Rich interactive charts with ECharts: candlestick, line, and bar visualizations",
+    'projects.dataviz.bullet2': "Geographical map view for spatial market data analysis",
+    'projects.dataviz.bullet3': "Portfolio performance tracking and commodity price monitoring",
+    'projects.dataviz.bullet4': "Responsive single-page architecture built with Vue.js",
 
 
 } as const
