@@ -13,10 +13,9 @@ import swanHomepage from "@/public/projects/swanlessons/swan-homepage.png";
 import swanDesktop1 from "@/public/projects/swanlessons/swan-desktop1.png";
 import swanDesktop2 from "@/public/projects/swanlessons/swan-desktop2.png";
 import swanMobile from "@/public/projects/swanlessons/swan-mobile.png";
-import vocabioHomepage from "@/public/projects/vocabio/vocabio-homepage.png";
-import vocabioDesktop1 from "@/public/projects/vocabio/vocabio-desktop1.png";
-import vocabioDesktop2 from "@/public/projects/vocabio/vocabio-desktop2.png";
-import vocabioMobile from "@/public/projects/vocabio/vocabio-mobile.png";
+import vocabioOverview from "@/public/projects/vocabio/vocabio-overview.png";
+import vocabioFeatures from "@/public/projects/vocabio/vocabio-features.png";
+import vocabioStats from "@/public/projects/vocabio/vocabio-stats.png";
 import dataVizPortfolio from "@/public/projects/data-viz/data-viz-portfolio.png";
 import dataVizOilLng from "@/public/projects/data-viz/data-viz-oil-lng.png";
 import dataVizMap from "@/public/projects/data-viz/data-viz-map.png";
@@ -160,19 +159,25 @@ export async function createProjects(): Promise<ProjectInterface[]> {
         techStack: ["React Native", "Node.js", "express.js", "Prisma", "Supabase", "PostgreSQL", "Socket.io", "Typescript", "Jest"],
         startDate: new Date("2025-09-01"),
         endDate: new Date("2026-10-01"),
-        companyLogoImg: vocabioHomepage,
+        companyLogoImg: vocabioOverview,
         pagesInfoArr: [
           {
-            title: "Desktop Overview",
+            title: "App Overview",
             description:
               i18n('projects.vocabio.desktopdesc'),
-            imgArr: [vocabioHomepage, vocabioDesktop1, vocabioDesktop2],
+            imgArr: [vocabioOverview],
           },
           {
-            title: "Mobile Overview",
+            title: "Vocabulary & Articles",
             description:
               i18n('projects.vocabio.mobiledesc'),
-            imgArr: [vocabioMobile],
+            imgArr: [vocabioFeatures],
+          },
+          {
+            title: "Stats & Messaging",
+            description:
+              i18n('projects.vocabio.articlesdesc'),
+            imgArr: [vocabioStats],
           },
         ],
         descriptionDetails: {
