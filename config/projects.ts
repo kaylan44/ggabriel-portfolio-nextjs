@@ -13,6 +13,9 @@ import swanHomepage from "@/public/projects/swanlessons/swan-homepage.png";
 import swanDesktop1 from "@/public/projects/swanlessons/swan-desktop1.png";
 import swanDesktop2 from "@/public/projects/swanlessons/swan-desktop2.png";
 import swanMobile from "@/public/projects/swanlessons/swan-mobile.png";
+import dataVizPortfolio from "@/public/projects/data-viz/data-viz-portfolio.png";
+import dataVizOilLng from "@/public/projects/data-viz/data-viz-oil-lng.png";
+import dataVizMap from "@/public/projects/data-viz/data-viz-map.png";
 
 
 interface PagesInfoInterface {
@@ -140,6 +143,46 @@ export async function createProjects(): Promise<ProjectInterface[]> {
 
   return (
     [
+      {
+        id: "data-viz",
+        companyName: "MarketDeck",
+        type: "Professional",
+        category: ["Frontend", "Data Viz"],
+        shortDescription:
+          i18n('projects.dataviz.description'),
+        websiteLink:
+          "https://data-viz-delta.vercel.app/",
+        githubLink: "https://github.com/kaylan44/data-viz",
+        techStack: ["Vue.js", "ECharts"],
+        startDate: new Date("2026-09-01"),
+        endDate: new Date("2026-10-01"),
+        companyLogoImg: dataVizPortfolio,
+        pagesInfoArr: [
+          {
+            title: "Dashboard Overview",
+            description:
+              i18n('projects.dataviz.desktopdesc'),
+            imgArr: [dataVizPortfolio, dataVizOilLng],
+          },
+          {
+            title: "Map View",
+            description:
+              i18n('projects.dataviz.mapdesc'),
+            imgArr: [dataVizMap],
+          },
+        ],
+        descriptionDetails: {
+          paragraphs: [
+            i18n('projects.dataviz.detailsdesc'),
+          ],
+          bullets: [
+            i18n('projects.dataviz.bullet1'),
+            i18n('projects.dataviz.bullet2'),
+            i18n('projects.dataviz.bullet3'),
+            i18n('projects.dataviz.bullet4'),
+          ],
+        },
+      },
       {
         id: "swan-lessons",
         companyName: "Swan Lessons",
