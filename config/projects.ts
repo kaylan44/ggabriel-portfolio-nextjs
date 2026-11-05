@@ -145,7 +145,7 @@ export async function createProjects(): Promise<ProjectInterface[]> {
     [
       {
         id: "data-viz",
-        companyName: "MarketDeck",
+        companyName: "DataViz",
         type: "Professional",
         category: ["Frontend", "Data Viz"],
         shortDescription:
