@@ -147,7 +147,7 @@ export async function createProjects(): Promise<ProjectInterface[]> {
         id: "data-viz",
         companyName: "DataViz",
         type: "Professional",
-        category: ["Frontend", "Data Viz"],
+        category: ["Frontend", "Data Viz", "UI/UX"],
         shortDescription:
           i18n('projects.dataviz.description'),
         websiteLink:
