@@ -19,6 +19,21 @@ export interface ExperienceInterface {
 
 export const experiences: ExperienceInterface[] = [
   {
+    id: "freelance",
+    position: "Freelance Fullstack Developer & DevOps",
+    company: "Freelance",
+    location: "Remote",
+    startDate: new Date("2025-10-01"),
+    endDate: "Present",
+    description: [
+      "Design and development of modern web and mobile applications (React / Next.js / React Native), with Supabase integration (database, authentication, etc.).",
+      "End-to-end project ownership, from requirements definition through to deployment and ongoing maintenance.",
+      "Integration of AI-assisted development tools (Claude Code) to streamline workflows and improve delivery processes.",
+      "Technical consulting and product-oriented decision-making for clients across various industries.",
+    ],
+    skills: ["React", "Next.js", "React Native", "Typescript", "Supabase", "Node.js", "Docker", "CI/CD", "Vercel"],
+  },
+  {
     id: "cultura",
     position: "DevOps Engineer",
     company: "Cultura",
