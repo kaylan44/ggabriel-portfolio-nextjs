@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import ChipContainer from "@/components/ui/chip-container";
 import { ResponsiveTabs } from "@/components/ui/responsive-tabs";
-import { experiences } from "@/config/experience";
+import { getExperiences } from "@/config/experience";
 import { siteConfig } from "@/config/site";
 
 interface ExperienceDetailPageProps {
@@ -39,6 +39,7 @@ const getDurationText = (
 export async function generateMetadata({
   params,
 }: ExperienceDetailPageProps): Promise<Metadata> {
+  const experiences = await getExperiences();
   const experience = experiences.find((c) => c.id === params.expId);
 
   if (!experience) {
@@ -60,6 +61,7 @@ export default async function ExperienceDetailPage({
   params,
 }: ExperienceDetailPageProps) {
   const locale = await getCurrentLocale();
+  const experiences = await getExperiences();
   const experience = experiences.find((c) => c.id === params.expId);
 
   if (!experience) {

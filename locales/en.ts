@@ -45,6 +45,38 @@ export default {
     'resume.informations': "Graduated from ENSEIRB-MATMECA engineer school.",
     'resume.download': "Download",
 
+    // Experience entries
+    'experience.freelance.position': "Freelance Fullstack Developer & DevOps",
+    'experience.freelance.description1': "Design and development of modern web and mobile applications (React / Next.js / React Native), with Node.js and Java backend services and SQL/Supabase database integration.",
+    'experience.freelance.description2': "End-to-end project ownership, from requirements definition through to deployment and ongoing maintenance.",
+    'experience.freelance.description3': "Integration of AI-assisted development tools (Claude Code) to streamline workflows and improve delivery processes.",
+    'experience.freelance.description4': "Technical consulting and product-oriented decision-making for clients across various industries.",
+
+    'experience.cultura.position': "DevOps Engineer",
+    'experience.cultura.description1': "Implementation and development of monitoring and visualization tools (Prometheus/Grafana/AlertManager), as well as management of monitoring and alerting for non-production and production environments.",
+    'experience.cultura.description2': "Deployment and optimization of projects through CI/CD pipelines using GitLab CI.",
+    'experience.cultura.description3': "Setup of DevOps tooling with Kubernetes & Helm, along with management, creation, and optimization of Docker images using Azure Container Registry.",
+    'experience.cultura.description4': "Development of Infrastructure as Code with Terraform and deployment of various Azure Cloud services, including support for Kubernetes cluster administration.",
+
+    'experience.sanofi.position': "Industrial Device Expert",
+    'experience.sanofi.description1': "Management of industrial device fleets, deployment activities, and solution design & consulting in an international context within the \"Mobility Industrial Devices\" team, covering all SANOFI industrial sites.",
+    'experience.sanofi.description2': "Management of multiple major SANOFI projects independently for the Mobility & Devices scope, including support with ordering, solution design, planning coordination, and deployment of new hardware/applications.",
+    'experience.sanofi.description3': "Management of a fleet of approximately 4,000 devices across various sites worldwide, high-level support, and design of new solutions based on site requirements. Collaboration with industrial infrastructure teams (Wi-Fi, LAN, Firewall, AD management, cybersecurity, etc.).",
+    'experience.sanofi.description4': "Design of an industrial device catalog and testing of new equipment to address SANOFI's numerous IT challenges (Android, Windows, ATEX Zones 1 & 2, scanning devices, etc.).",
+    'experience.sanofi.description5': "Coordination with various manufacturers and hardware suppliers to recommend optimal solutions for the sites (price/performance/quality) and co-construction of new projects in collaboration with suppliers.",
+
+    'experience.atos.position': "Fullstack Developer",
+    'experience.atos.description1': "Full-Stack development within a Scrum team for an innovative corporate carpooling solution in an IoT environment, including the creation of the entire application ecosystem from scratch.",
+    'experience.atos.description2': "Design of a containerized backend environment supporting the carpooling system and integrating multiple data sources (GPS, public transport, application data, parking information, etc.)",
+    'experience.atos.description3': "Management of environments and a CI/CD pipeline to ensure deployment quality (Docker/Jenkins/SonarQube).",
+    'experience.atos.description4': "Development carried out following the SCRUM methodology.",
+
+    'experience.atosinter.position': "Intern - Fullstack Developer",
+    'experience.atosinter.description1': "Design and development of cross-platform mobile applications integrated into a Smart-City management system with multimodal transportation.",
+    'experience.atosinter.description2': "Design of a containerized backend environment supporting the carpooling system and integrating multiple data sources (GPS, public transport, application data, parking information, etc.)",
+    'experience.atosinter.description3': "Management of environments and a CI/CD pipeline to ensure deployment quality (Docker/Jenkins/SonarQube).",
+    'experience.atosinter.description4': "Development carried out following the SCRUM methodology.",
+
     'experience': 'Experience',
     'studies': 'Studies',
     'siteConfig.jobTitle': "Full Stack Developer",
