@@ -1,6 +1,6 @@
 # Portfolio Website Navigation Overview
 
-This document outlines the navigation structure of the portfolio website [https://nbarkiya.xyz/](https://nbarkiya.xyz/), detailing each page and its primary sections to facilitate understanding and interaction.
+This document outlines the navigation structure of the portfolio website [https://ggabriel-portfolio-nextjs.vercel.app/](https://ggabriel-portfolio-nextjs.vercel.app/), detailing each page and its primary sections to facilitate understanding and interaction.
 
 ---
 
@@ -8,12 +8,11 @@ This document outlines the navigation structure of the portfolio website [https:
 
 The website's main navigation menu is accessible from all pages and includes the following links:
 
-1. **Home**: [https://nbarkiya.xyz/](https://nbarkiya.xyz/)
-2. **Skills**: [https://nbarkiya.xyz/skills](https://nbarkiya.xyz/skills)
-3. **Projects**: [https://nbarkiya.xyz/projects](https://nbarkiya.xyz/projects)
-4. **Experience**: [https://nbarkiya.xyz/experience](https://nbarkiya.xyz/experience)
-5. **Contributions**: [https://nbarkiya.xyz/contributions](https://nbarkiya.xyz/contributions)
-6. **Contact**: [https://nbarkiya.xyz/contact](https://nbarkiya.xyz/contact)
+1. **Home**: [https://ggabriel-portfolio-nextjs.vercel.app/](https://ggabriel-portfolio-nextjs.vercel.app/)
+2. **Skills**: [https://ggabriel-portfolio-nextjs.vercel.app/skills](https://ggabriel-portfolio-nextjs.vercel.app/skills)
+3. **Projects**: [https://ggabriel-portfolio-nextjs.vercel.app/projects](https://ggabriel-portfolio-nextjs.vercel.app/projects)
+4. **Experience**: [https://ggabriel-portfolio-nextjs.vercel.app/experience](https://ggabriel-portfolio-nextjs.vercel.app/experience)
+5. **Resume**: [https://ggabriel-portfolio-nextjs.vercel.app/resume](https://ggabriel-portfolio-nextjs.vercel.app/resume)
 
 ---
 
@@ -21,19 +20,18 @@ The website's main navigation menu is accessible from all pages and includes the
 
 ### 1. Home
 
-**URL:** [https://nbarkiya.xyz/](https://nbarkiya.xyz/)
+**URL:** [https://ggabriel-portfolio-nextjs.vercel.app/](https://ggabriel-portfolio-nextjs.vercel.app/)
 
 **Sections:**
 
-- **Introduction**: Presents the individual's name and role (e.g., "Full Stack Developer").
+- **Introduction**: Presents Guillaume Gabriel's name and role (Fullstack Developer / DevOps).
 - **Skills Overview**: Highlights key skills with a prompt to view all skills.
 - **Projects Highlights**: Summarizes notable technical projects with links to detailed descriptions.
 - **Experience Highlights**: Summarizes professional work experience with links to detailed descriptions.
-- **Contributions Summary**: Lists recent open-source contributions with links for more information.
 
 ### 2. Skills
 
-**URL:** [https://nbarkiya.xyz/skills](https://nbarkiya.xyz/skills)
+**URL:** [https://ggabriel-portfolio-nextjs.vercel.app/skills](https://ggabriel-portfolio-nextjs.vercel.app/skills)
 
 **Sections:**
 
@@ -41,7 +39,7 @@ The website's main navigation menu is accessible from all pages and includes the
 
 ### 3. Projects
 
-**URL:** [https://nbarkiya.xyz/projects](https://nbarkiya.xyz/projects)
+**URL:** [https://ggabriel-portfolio-nextjs.vercel.app/projects](https://ggabriel-portfolio-nextjs.vercel.app/projects)
 
 **Sections:**
 
@@ -49,32 +47,24 @@ The website's main navigation menu is accessible from all pages and includes the
 
 ### 4. Experience
 
-**URL:** [https://nbarkiya.xyz/experience](https://nbarkiya.xyz/experience)
+**URL:** [https://ggabriel-portfolio-nextjs.vercel.app/experience](https://ggabriel-portfolio-nextjs.vercel.app/experience)
 
 **Sections:**
 
 - **Professional Experience**: Details work experience with company information, roles, and achievements.
 
-### 5. Contributions
+### 5. Resume
 
-**URL:** [https://nbarkiya.xyz/contributions](https://nbarkiya.xyz/contributions)
-
-**Sections:**
-
-- **Open-Source Contributions**: Lists contributions with descriptions and links to the respective repositories.
-
-### 6. Contact
-
-**URL:** [https://nbarkiya.xyz/contact](https://nbarkiya.xyz/contact)
+**URL:** [https://ggabriel-portfolio-nextjs.vercel.app/resume](https://ggabriel-portfolio-nextjs.vercel.app/resume)
 
 **Sections:**
 
-- **Contact Form**: Fields for name, email, message, and optional social links.
-- **GitHub Link**: Provides a link to the source code of the website's template.
+- **Resume Download**: Provides Guillaume Gabriel's CV for download.
 
 ---
 
 ## Additional Features
 
+- **Language Toggle**: Allows users to switch between French and English (next-international).
 - **Theme Toggle**: Allows users to switch between light and dark themes.
 - **Responsive Design**: Ensures optimal viewing across various devices.
