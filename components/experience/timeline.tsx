@@ -1,10 +1,10 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-import { AnimatedSection } from "@/components/common/animated-section";
 import { Icons } from "@/components/common/icons";
 import { Button } from "@/components/ui/button";
 import { ExperienceInterface } from "@/config/experience";
@@ -42,10 +42,11 @@ const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
   return (
     <div className="space-y-4">
       {sortedExperiences.map((experience, index) => (
-        <AnimatedSection
+        <motion.div
           key={experience.id}
-          delay={0.1 * (index + 1)}
-          direction="up"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 * index, ease: "easeOut" }}
         >
           <div className="w-full p-4 sm:p-6 bg-background border border-border rounded-lg transition-all duration-300">
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
@@ -109,7 +110,7 @@ const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
               </Button>
             </div>
           </div>
-        </AnimatedSection>
+        </motion.div>
       ))}
     </div>
   );
