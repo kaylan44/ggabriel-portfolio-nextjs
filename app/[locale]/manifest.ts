@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Guillaume Gabriel Portfolio",
     short_name: "Guillaume GABRIEL's Portfolio",
     description:
-      "Guillaume Gabriel's modern developer portfolio built with Next.js - available as an open-source template",
+      "Guillaume Gabriel's modern developer portfolio built with Next.js.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",
@@ -25,13 +25,11 @@ export default function manifest(): MetadataRoute.Manifest {
     ],
     categories: [
       "portfolio",
-      "template",
       "development",
       "nextjs",
       "react",
       "developer",
       "web development",
-      "open source",
     ],
     lang: "en",
     dir: "ltr",
