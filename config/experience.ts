@@ -1,6 +1,6 @@
 import { getI18n } from "@/locales/server";
 import { ValidSkills } from "./constants";
-import freelanceLogo from "@/public/experience/freelance-logo.webp";
+import freelanceLogo from "@/public/experience/freelance-logo.png";
 import culturaLogo from "@/public/experience/cultura-logo.png";
 import atosLogo from "@/public/experience/atos-logo.png";
 import sanofiLogo from "@/public/experience/sanofi-logo.png";
