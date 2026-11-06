@@ -10,7 +10,7 @@ import { Icons } from "@/components/common/icons";
 import ExperienceCard from "@/components/experience/experience-card";
 import SkillsCard from "@/components/skills/skills-card";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { experiences } from "@/config/experience";
+import { getExperiences } from "@/config/experience";
 import { getPagesConfig } from "@/config/pages";
 import { siteConfig } from "@/config/site";
 import { getfeaturedSkills } from "@/config/skills";
@@ -37,6 +37,7 @@ export default async function IndexPage() {
   const i18n = await getI18n()
   const pagesConfig = await getPagesConfig();
   const featuredProjects = await getFeaturedProjects();
+  const experiences = await getExperiences();
 
   // Structured data for personal portfolio
   const personSchema = {
