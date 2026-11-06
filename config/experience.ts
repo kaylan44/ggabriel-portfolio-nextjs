@@ -1,5 +1,6 @@
 import { getI18n } from "@/locales/server";
 import { ValidSkills } from "./constants";
+import freelanceLogo from "@/public/experience/freelance-logo.webp";
 import culturaLogo from "@/public/experience/cultura-logo.png";
 import atosLogo from "@/public/experience/atos-logo.png";
 import sanofiLogo from "@/public/experience/sanofi-logo.png";
@@ -36,6 +37,7 @@ export async function getExperiences(): Promise<ExperienceInterface[]> {
         i18n("experience.freelance.description4"),
       ],
       skills: ["React", "Next.js", "React Native", "Typescript", "Node.js", "Java", "PostgreSQL", "Supabase", "Docker", "CI/CD", "Vercel"],
+      logo: freelanceLogo,
     },
     {
       id: "cultura",
