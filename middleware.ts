@@ -7,7 +7,11 @@ const I18nMiddleware = createI18nMiddleware({
 });
 
 export function middleware(request: NextRequest) {
-  return I18nMiddleware(request);
+  const response = I18nMiddleware(request);
+  if (response) {
+    response.headers.set("Cache-Control", "public, max-age=0, must-revalidate");
+  }
+  return response;
 }
 
 export const config = {
