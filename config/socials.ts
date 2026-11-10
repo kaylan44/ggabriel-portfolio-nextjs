@@ -16,13 +16,13 @@ export const SocialLinks: SocialInterface[] = [
   },
   {
     name: "Gmail",
-    username: "guillaume.g44@hotmail.fr",
+    username: "guillaume.gabriel.it@gmail.com",
     icon: Icons.gmail,
-    link: "mailto:guillaume.g44@hotmail.fr",
+    link: "mailto:guillaume.gabriel.it@gmail.com",
   },
   {
     name: "Whatsapp",
-    username: "guillaume.g44@hotmail.fr",
+    username: "guillaume.gabriel.it@gmail.com",
     icon: Icons.whatsapp,
     link: "https://wa.me/33605036839",
   }

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 import PageContainer from "@/components/common/page-container";
 import Timeline from "@/components/experience/timeline";
-import { experiences } from "@/config/experience";
+import { getExperiences } from "@/config/experience";
 import { siteConfig } from "@/config/site";
 import { pagesConfigMetadata } from "@/config/page-metadata";
 import { getPagesConfig } from "@/config/pages";
@@ -23,7 +23,10 @@ export const metadata: Metadata = {
 };
 
 export default async function ExperiencePage() {
-  const pagesConfig = await getPagesConfig();
+  const [pagesConfig, experiences] = await Promise.all([
+    getPagesConfig(),
+    getExperiences(),
+  ]);
 
   return (
     <PageContainer

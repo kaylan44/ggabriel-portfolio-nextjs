@@ -45,6 +45,38 @@ export default {
     'resume.informations': "Graduated from ENSEIRB-MATMECA engineer school.",
     'resume.download': "Download",
 
+    // Experience entries
+    'experience.freelance.position': "Freelance Fullstack Developer & DevOps",
+    'experience.freelance.description1': "Design and development of modern web and mobile applications (React / Next.js / React Native), with Node.js and Java backend services and SQL/Supabase database integration.",
+    'experience.freelance.description2': "End-to-end project ownership, from requirements definition through to deployment and ongoing maintenance.",
+    'experience.freelance.description3': "Integration of AI-assisted development tools (Claude Code) to streamline workflows and improve delivery processes.",
+    'experience.freelance.description4': "Technical consulting and product-oriented decision-making for clients across various industries.",
+
+    'experience.cultura.position': "DevOps Engineer",
+    'experience.cultura.description1': "Implementation and development of monitoring and visualization tools (Prometheus/Grafana/AlertManager), as well as management of monitoring and alerting for non-production and production environments.",
+    'experience.cultura.description2': "Deployment and optimization of projects through CI/CD pipelines using GitLab CI.",
+    'experience.cultura.description3': "Setup of DevOps tooling with Kubernetes & Helm, along with management, creation, and optimization of Docker images using Azure Container Registry.",
+    'experience.cultura.description4': "Development of Infrastructure as Code with Terraform and deployment of various Azure Cloud services, including support for Kubernetes cluster administration.",
+
+    'experience.sanofi.position': "Industrial Device Expert",
+    'experience.sanofi.description1': "Management of industrial device fleets, deployment activities, and solution design & consulting in an international context within the \"Mobility Industrial Devices\" team, covering all SANOFI industrial sites.",
+    'experience.sanofi.description2': "Management of multiple major SANOFI projects independently for the Mobility & Devices scope, including support with ordering, solution design, planning coordination, and deployment of new hardware/applications.",
+    'experience.sanofi.description3': "Management of a fleet of approximately 4,000 devices across various sites worldwide, high-level support, and design of new solutions based on site requirements. Collaboration with industrial infrastructure teams (Wi-Fi, LAN, Firewall, AD management, cybersecurity, etc.).",
+    'experience.sanofi.description4': "Design of an industrial device catalog and testing of new equipment to address SANOFI's numerous IT challenges (Android, Windows, ATEX Zones 1 & 2, scanning devices, etc.).",
+    'experience.sanofi.description5': "Coordination with various manufacturers and hardware suppliers to recommend optimal solutions for the sites (price/performance/quality) and co-construction of new projects in collaboration with suppliers.",
+
+    'experience.atos.position': "Fullstack Developer",
+    'experience.atos.description1': "Full-Stack development within a Scrum team for an innovative corporate carpooling solution in an IoT environment, including the creation of the entire application ecosystem from scratch.",
+    'experience.atos.description2': "Design of a containerized backend environment supporting the carpooling system and integrating multiple data sources (GPS, public transport, application data, parking information, etc.)",
+    'experience.atos.description3': "Management of environments and a CI/CD pipeline to ensure deployment quality (Docker/Jenkins/SonarQube).",
+    'experience.atos.description4': "Development carried out following the SCRUM methodology.",
+
+    'experience.atosinter.position': "Intern - Fullstack Developer",
+    'experience.atosinter.description1': "Design and development of cross-platform mobile applications integrated into a Smart-City management system with multimodal transportation.",
+    'experience.atosinter.description2': "Design of a containerized backend environment supporting the carpooling system and integrating multiple data sources (GPS, public transport, application data, parking information, etc.)",
+    'experience.atosinter.description3': "Management of environments and a CI/CD pipeline to ensure deployment quality (Docker/Jenkins/SonarQube).",
+    'experience.atosinter.description4': "Development carried out following the SCRUM methodology.",
+
     'experience': 'Experience',
     'studies': 'Studies',
     'siteConfig.jobTitle': "Full Stack Developer",
@@ -111,6 +143,20 @@ export default {
     'projects.swanlessons.bullet3': "Trust elements integration: teacher credentials, social proof, and transparent pricing",
     'projects.swanlessons.bullet4': "Responsive UI built with React, Next.js, and Tailwind CSS",
 
+    'projects.vocabio.description': "Mobile vocabulary quiz app (Spanish & Indonesian) with real-time messaging, detailed stats and Spanish articles — focused on backend architecture.",
+    'projects.vocabio.desktopdesc': "Login screen, home with bidirectional quiz modes (French→Spanish / Spanish→French), and a live quiz question with 4 choices tagged by grammatical category and CEFR level.",
+    'projects.vocabio.mobiledesc': "Language selection, vocabulary browser by category, and an Easy-Spanish article reader with tap-to-translate on underlined phrases.",
+    'projects.vocabio.articlesdesc': "Account screen with detailed quiz statistics (by mode, category and CEFR level, plus most-missed words), and the real-time 1:1 messaging interface.",
+
+    'projects.vocabio.detailsdesc': `Mobile vocabulary learning application built with React Native / Expo and a custom Node.js / Express backend deployed on Railway.
+        The focus was on backend architecture: a clean layered design (routes → services → repositories) with Prisma ORM, Supabase PostgreSQL, JWT auth and Socket.io real-time messaging.
+        The app supports Spanish (630 words, A1–B1) and Indonesian (224 words), tracks per-word mastery in both translation directions, and aggregates detailed quiz statistics per category, level and mode.`,
+
+    'projects.vocabio.bullet1': "Layered backend architecture (routes / services / repositories) with strict dependency boundaries",
+    'projects.vocabio.bullet2': "Real-time 1:1 messaging via Socket.io with optimistic UI, typing indicators and read receipts",
+    'projects.vocabio.bullet3': "Per-word, per-direction mastery tracking (new → seen → mastered) computed server-side",
+    'projects.vocabio.bullet4': "JWT via Supabase Auth (Google SSO) with server-side verification — no network call per request",
+    'projects.vocabio.bullet5': "Easy-Spanish articles synced from WordPress with MP3 audio and tap-to-translate",
     'projects.dataviz.description': "Interactive data visualization platform for energy market analysis, built with Vue.js and ECharts.",
     'projects.dataviz.desktopdesc': "Desktop overview showcasing the main dashboard with market portfolio tracking, commodity charts, and key performance indicators.",
     'projects.dataviz.mapdesc': "Geographical map view enabling spatial analysis of energy data distribution and regional market insights.",
