@@ -2,8 +2,12 @@ import { getI18n } from "@/locales/server";
 import { ValidCategory, ValidExpType, ValidSkills } from "./constants";
 import balijewelryhome from "@/public/projects/balijewelry/balijewelryhome.png";
 import horizonsHomepage from "@/public/projects/horizonspossibles/horizons-homepage.png";
-import horizonsServices from "@/public/projects/horizonspossibles/horizons-services.png";
-import horizonsFeatures from "@/public/projects/horizonspossibles/horizons-features.png";
+import horizonsTemoignages from "@/public/projects/horizonspossibles/horizons-temoignages.png";
+import horizonsPaysHero from "@/public/projects/horizonspossibles/horizons-pays-hero.png";
+import horizonsPaysDetails from "@/public/projects/horizonspossibles/horizons-pays-details.png";
+import horizonsMobileHome from "@/public/projects/horizonspossibles/horizons-mobile-home.png";
+import horizonsMobileTemoignages from "@/public/projects/horizonspossibles/horizons-mobile-temoignages.png";
+import horizonsMobilePays from "@/public/projects/horizonspossibles/horizons-mobile-pays.png";
 import dashdesktop1 from "@/public/projects/dashboard/desktop1.png";
 import dashdesktop2 from "@/public/projects/dashboard/desktop2.png";
 import dashdesktop3 from "@/public/projects/dashboard/desktop3.png";
@@ -170,10 +174,22 @@ export async function createProjects(): Promise<ProjectInterface[]> {
             imgArr: [horizonsHomepage],
           },
           {
-            title: "Services & Coaching",
+            title: "Témoignages",
             description:
-              i18n('projects.horizonspossibles.servicesdesc'),
-            imgArr: [horizonsServices, horizonsFeatures],
+              i18n('projects.horizonspossibles.temoignagesdesc'),
+            imgArr: [horizonsTemoignages],
+          },
+          {
+            title: "Pages Pays",
+            description:
+              i18n('projects.horizonspossibles.paysdesc'),
+            imgArr: [horizonsPaysHero, horizonsPaysDetails],
+          },
+          {
+            title: "Mobile",
+            description:
+              i18n('projects.horizonspossibles.mobiledesc'),
+            imgArr: [horizonsMobileHome, horizonsMobileTemoignages, horizonsMobilePays],
           },
         ],
         descriptionDetails: {

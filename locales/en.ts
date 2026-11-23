@@ -170,14 +170,16 @@ export default {
 
     'projects.horizonspossibles.description': "Expat coaching website helping French families and entrepreneurs build a life abroad, built with Next.js.",
     'projects.horizonspossibles.desktopdesc': "Homepage hero presenting the value proposition with an immersive full-screen background, clear CTA buttons and clean navigation targeting entrepreneurs and families.",
-    'projects.horizonspossibles.servicesdesc': "Services section showcasing tailored coaching paths for digital nomads and entrepreneurs, covering company structure, banking, visas and tax residency.",
+    'projects.horizonspossibles.temoignagesdesc': "Testimonials page featuring 13 video reviews from real clients — families, entrepreneurs and future expats — displayed in a dark-themed grid layout.",
+    'projects.horizonspossibles.paysdesc': "Dedicated country pages (Thaïlande, Mexique, Bali, Vietnam…) with immersive hero photos, country facts (language, currency, timezone, flight time), target profiles, strengths and watchouts.",
+    'projects.horizonspossibles.mobiledesc': "Mobile-optimized views of the homepage, testimonials grid and country pages — fully responsive layout adapted for smaller screens.",
     'projects.horizonspossibles.detailsdesc': `Design and development of a conversion-focused coaching website for Grégory, an expat expert helping French-speaking families and entrepreneurs relocate abroad.
-        The site is structured around two distinct coaching paths (entrepreneurs and families), each with dedicated content, trust-building elements, and direct WhatsApp CTA.
-        The design uses a bold typographic approach with an immersive hero and clear section hierarchy to guide visitors toward booking a consultation.`,
+        The site is built around two coaching paths (entrepreneurs and families), 9 detailed country destination pages, a 13-video testimonials page, an interactive quiz and a WhatsApp CTA.
+        The design uses a bold typographic approach with immersive heroes, a dark-themed testimonials section and a consistent light/dark content hierarchy across all pages.`,
     'projects.horizonspossibles.bullet1': "Two distinct coaching paths: entrepreneurs (company, banking, visa, tax) and families (school, housing, visa)",
-    'projects.horizonspossibles.bullet2': "Conversion-focused structure with WhatsApp CTA and quiz funnel to qualify leads",
-    'projects.horizonspossibles.bullet3': "Immersive hero with bold typography and social proof through testimonials",
-    'projects.horizonspossibles.bullet4': "Responsive design optimized for desktop and mobile",
+    'projects.horizonspossibles.bullet2': "9 country destination pages with facts, profiles, strengths/watchouts and a comparison scoring system",
+    'projects.horizonspossibles.bullet3': "13-video testimonials page with client reviews from families and entrepreneurs",
+    'projects.horizonspossibles.bullet4': "Conversion-focused structure: WhatsApp CTA, lead-qualifying quiz, and Google Analytics 4 tracking",
 
 } as const
 

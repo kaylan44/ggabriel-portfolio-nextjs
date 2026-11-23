@@ -168,14 +168,16 @@ export default {
 
     'projects.horizonspossibles.description': "Site de coaching en expatriation aidant les familles et entrepreneurs francophones à construire une vie à l'étranger, développé avec Next.js.",
     'projects.horizonspossibles.desktopdesc': "Hero de la page d'accueil présentant la proposition de valeur avec un fond immersif plein écran, des boutons CTA clairs et une navigation épurée ciblant entrepreneurs et familles.",
-    'projects.horizonspossibles.servicesdesc': "Section services présentant deux parcours d'accompagnement sur mesure pour digital nomades et entrepreneurs, couvrant structure juridique, bancaire, visa et résidence fiscale.",
+    'projects.horizonspossibles.temoignagesdesc': "Page témoignages présentant 13 avis vidéo de vrais clients — familles, entrepreneurs et futurs expatriés — dans une grille sombre épurée.",
+    'projects.horizonspossibles.paysdesc': "Pages pays dédiées (Thaïlande, Mexique, Bali, Vietnam…) avec hero immersif, données clés (langue, monnaie, décalage horaire, vol), profils cibles, points forts et vigilances.",
+    'projects.horizonspossibles.mobiledesc': "Vues optimisées mobile de la page d'accueil, de la grille témoignages et des pages pays — mise en page entièrement responsive adaptée aux petits écrans.",
     'projects.horizonspossibles.detailsdesc': `Conception et développement d'un site de coaching orienté conversion pour Grégory, expert en expatriation accompagnant les familles et entrepreneurs francophones dans leur installation à l'étranger.
-        Le site est structuré autour de deux parcours distincts (entrepreneurs et familles), chacun avec un contenu dédié, des éléments de réassurance et un CTA WhatsApp direct.
-        Le design adopte une typographie bold et affirmée, avec un hero immersif et une hiérarchie de sections claire pour guider les visiteurs vers la prise de contact.`,
+        Le site est construit autour de deux parcours d'accompagnement (entrepreneurs et familles), 9 pages pays détaillées, une page de 13 témoignages vidéo, un quiz interactif et un CTA WhatsApp.
+        Le design adopte une typographie bold et affirmée, avec des heroes immersifs, une section témoignages en thème sombre et une hiérarchie de contenu claire sur toutes les pages.`,
     'projects.horizonspossibles.bullet1': "Deux parcours distincts : entrepreneurs (société, banque, visa, fiscalité) et familles (école, logement, visa)",
-    'projects.horizonspossibles.bullet2': "Structure orientée conversion avec CTA WhatsApp et quiz de qualification des prospects",
-    'projects.horizonspossibles.bullet3': "Hero immersif à la typographie bold et réassurance via témoignages clients",
-    'projects.horizonspossibles.bullet4': "Design responsive optimisé desktop et mobile",
+    'projects.horizonspossibles.bullet2': "9 pages pays avec données clés, profils, points forts/vigilances et système de notation comparative",
+    'projects.horizonspossibles.bullet3': "Page témoignages avec 13 vidéos de clients (familles et entrepreneurs)",
+    'projects.horizonspossibles.bullet4': "Structure orientée conversion : CTA WhatsApp, quiz de qualification et tracking Google Analytics 4",
 
 } as const
 
