@@ -1,6 +1,10 @@
 import { getI18n } from "@/locales/server";
 import { ValidCategory, ValidExpType, ValidSkills } from "./constants";
 import balijewelryhome from "@/public/projects/balijewelry/balijewelryhome.png";
+import horizonsCover from "@/public/projects/horizonspossibles/horizons-cover.png";
+import horizonsHomepage from "@/public/projects/horizonspossibles/horizons-homepage.png";
+import horizonsTemoignages from "@/public/projects/horizonspossibles/horizons-temoignages.png";
+import horizonsPaysHero from "@/public/projects/horizonspossibles/horizons-pays-hero.png";
 import dashdesktop1 from "@/public/projects/dashboard/desktop1.png";
 import dashdesktop2 from "@/public/projects/dashboard/desktop2.png";
 import dashdesktop3 from "@/public/projects/dashboard/desktop3.png";
@@ -146,6 +150,51 @@ export async function createProjects(): Promise<ProjectInterface[]> {
 
   return (
     [
+      {
+        id: "horizons-possibles",
+        companyName: "Horizons Possibles",
+        type: "Professional",
+        category: ["Frontend", "UI/UX", "Web Dev"],
+        shortDescription:
+          i18n('projects.horizonspossibles.description'),
+        websiteLink:
+          "https://horizonspossibles.com/",
+        techStack: ["React", "Next.js", "Tailwind CSS"],
+        startDate: new Date("2026-10-01"),
+        endDate: new Date("2026-11-01"),
+        companyLogoImg: horizonsCover,
+        pagesInfoArr: [
+          {
+            title: "Homepage",
+            description:
+              i18n('projects.horizonspossibles.desktopdesc'),
+            imgArr: [horizonsHomepage],
+          },
+          {
+            title: "Témoignages",
+            description:
+              i18n('projects.horizonspossibles.temoignagesdesc'),
+            imgArr: [horizonsTemoignages],
+          },
+          {
+            title: "Pages Pays",
+            description:
+              i18n('projects.horizonspossibles.paysdesc'),
+            imgArr: [horizonsPaysHero],
+          },
+        ],
+        descriptionDetails: {
+          paragraphs: [
+            i18n('projects.horizonspossibles.detailsdesc'),
+          ],
+          bullets: [
+            i18n('projects.horizonspossibles.bullet1'),
+            i18n('projects.horizonspossibles.bullet2'),
+            i18n('projects.horizonspossibles.bullet3'),
+            i18n('projects.horizonspossibles.bullet4'),
+          ],
+        },
+      },
       {
         id: "vocabio",
         companyName: "Vocabio",

@@ -143,7 +143,7 @@ export default {
     'projects.swanlessons.bullet3': "Trust elements integration: teacher credentials, social proof, and transparent pricing",
     'projects.swanlessons.bullet4': "Responsive UI built with React, Next.js, and Tailwind CSS",
 
-    'projects.vocabio.description': "Mobile vocabulary quiz app (Spanish & Indonesian) with real-time messaging, detailed stats and Spanish articles — focused on backend architecture.",
+    'projects.vocabio.description': "Mobile vocabulary quiz app (Spanish & Indonesian) with real-time messaging, detailed stats and Spanish articles, focused on backend architecture.",
     'projects.vocabio.desktopdesc': "Login screen, home with bidirectional quiz modes (French→Spanish / Spanish→French), and a live quiz question with 4 choices tagged by grammatical category and CEFR level.",
     'projects.vocabio.mobiledesc': "Language selection, vocabulary browser by category, and an Easy-Spanish article reader with tap-to-translate on underlined phrases.",
     'projects.vocabio.articlesdesc': "Account screen with detailed quiz statistics (by mode, category and CEFR level, plus most-missed words), and the real-time 1:1 messaging interface.",
@@ -155,19 +155,31 @@ export default {
     'projects.vocabio.bullet1': "Layered backend architecture (routes / services / repositories) with strict dependency boundaries",
     'projects.vocabio.bullet2': "Real-time 1:1 messaging via Socket.io with optimistic UI, typing indicators and read receipts",
     'projects.vocabio.bullet3': "Per-word, per-direction mastery tracking (new → seen → mastered) computed server-side",
-    'projects.vocabio.bullet4': "JWT via Supabase Auth (Google SSO) with server-side verification — no network call per request",
+    'projects.vocabio.bullet4': "JWT via Supabase Auth (Google SSO) with server-side verification, no network call per request",
     'projects.vocabio.bullet5': "Easy-Spanish articles synced from WordPress with MP3 audio and tap-to-translate",
     'projects.dataviz.description': "Interactive data visualization platform for energy market analysis, built with Vue.js and ECharts.",
     'projects.dataviz.desktopdesc': "Desktop overview showcasing the main dashboard with market portfolio tracking, commodity charts, and key performance indicators.",
     'projects.dataviz.mapdesc': "Geographical map view enabling spatial analysis of energy data distribution and regional market insights.",
     'projects.dataviz.detailsdesc': `Development of an interactive data visualization platform focused on energy market analytics.
         The application leverages Vue.js for a responsive single-page architecture and ECharts for rich, interactive chart components.
-        The dashboard integrates multiple data views — portfolio tracking, oil & LNG price monitoring, and geographical mapping — to deliver actionable market intelligence.`,
+        The dashboard integrates multiple data views (portfolio tracking, oil & LNG price monitoring, and geographical mapping) to deliver actionable market intelligence.`,
     'projects.dataviz.bullet1': "Rich interactive charts with ECharts: candlestick, line, and bar visualizations",
     'projects.dataviz.bullet2': "Geographical map view for spatial market data analysis",
     'projects.dataviz.bullet3': "Portfolio performance tracking and commodity price monitoring",
     'projects.dataviz.bullet4': "Responsive single-page architecture built with Vue.js",
 
+    'projects.horizonspossibles.description': "Expat coaching website helping French families and entrepreneurs build a life abroad, built with Next.js.",
+    'projects.horizonspossibles.desktopdesc': "Homepage hero presenting the value proposition with an immersive full-screen background, clear CTA buttons and clean navigation targeting entrepreneurs and families.",
+    'projects.horizonspossibles.temoignagesdesc': "Testimonials page featuring 13 video reviews from real clients (families, entrepreneurs and future expats) displayed in a dark-themed grid layout.",
+    'projects.horizonspossibles.paysdesc': "Dedicated country pages (Thaïlande, Mexique, Bali, Vietnam…) with immersive hero photos, country facts (language, currency, timezone, flight time), target profiles, strengths and watchouts.",
+    'projects.horizonspossibles.mobiledesc': "Mobile-optimized views of the homepage, testimonials grid and country pages, with a fully responsive layout adapted for smaller screens.",
+    'projects.horizonspossibles.detailsdesc': `Design and development of a conversion-focused coaching website for Grégory, an expat expert helping French-speaking families and entrepreneurs relocate abroad.
+        The site is built around two coaching paths (entrepreneurs and families), 9 detailed country destination pages, a 13-video testimonials page, an interactive quiz and a WhatsApp CTA.
+        The site delivers a premium, high-end look while respecting the client's artistic direction, in line with their presence across social media.`,
+    'projects.horizonspossibles.bullet1': "Two distinct coaching paths: entrepreneurs (company, banking, visa, tax) and families (school, housing, visa)",
+    'projects.horizonspossibles.bullet2': "9 country destination pages with facts, profiles, strengths/watchouts and a comparison scoring system",
+    'projects.horizonspossibles.bullet3': "13-video testimonials page with client reviews from families and entrepreneurs",
+    'projects.horizonspossibles.bullet4': "Conversion-focused structure: WhatsApp CTA, lead-qualifying quiz, and Google Analytics 4 tracking",
 
 } as const
 
