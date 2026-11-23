@@ -168,6 +168,16 @@ export default {
     'projects.dataviz.bullet3': "Portfolio performance tracking and commodity price monitoring",
     'projects.dataviz.bullet4': "Responsive single-page architecture built with Vue.js",
 
+    'projects.horizonspossibles.description': "Expat coaching website helping French families and entrepreneurs build a life abroad, built with Next.js.",
+    'projects.horizonspossibles.desktopdesc': "Homepage hero presenting the value proposition with an immersive full-screen background, clear CTA buttons and clean navigation targeting entrepreneurs and families.",
+    'projects.horizonspossibles.servicesdesc': "Services section showcasing tailored coaching paths for digital nomads and entrepreneurs, covering company structure, banking, visas and tax residency.",
+    'projects.horizonspossibles.detailsdesc': `Design and development of a conversion-focused coaching website for Grégory, an expat expert helping French-speaking families and entrepreneurs relocate abroad.
+        The site is structured around two distinct coaching paths (entrepreneurs and families), each with dedicated content, trust-building elements, and direct WhatsApp CTA.
+        The design uses a bold typographic approach with an immersive hero and clear section hierarchy to guide visitors toward booking a consultation.`,
+    'projects.horizonspossibles.bullet1': "Two distinct coaching paths: entrepreneurs (company, banking, visa, tax) and families (school, housing, visa)",
+    'projects.horizonspossibles.bullet2': "Conversion-focused structure with WhatsApp CTA and quiz funnel to qualify leads",
+    'projects.horizonspossibles.bullet3': "Immersive hero with bold typography and social proof through testimonials",
+    'projects.horizonspossibles.bullet4': "Responsive design optimized for desktop and mobile",
 
 } as const
 
