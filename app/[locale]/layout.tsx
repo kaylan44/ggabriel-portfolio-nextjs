@@ -120,9 +120,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Toaster />
         </ThemeProvider>
       </body>
-      {process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID && (
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID} />
-      )}
+      {/* <GoogleAnalytics gaId={GA_ID} /> */}
     </html>
   );
 }
