@@ -1,6 +1,7 @@
 import { getI18n } from "@/locales/server";
 import { ValidCategory, ValidExpType, ValidSkills } from "./constants";
 import balijewelryhome from "@/public/projects/balijewelry/balijewelryhome.png";
+import horizonsCover from "@/public/projects/horizonspossibles/horizons-cover.png";
 import horizonsHomepage from "@/public/projects/horizonspossibles/horizons-homepage.png";
 import horizonsTemoignages from "@/public/projects/horizonspossibles/horizons-temoignages.png";
 import horizonsPaysHero from "@/public/projects/horizonspossibles/horizons-pays-hero.png";
@@ -161,7 +162,7 @@ export async function createProjects(): Promise<ProjectInterface[]> {
         techStack: ["React", "Next.js", "Tailwind CSS"],
         startDate: new Date("2026-10-01"),
         endDate: new Date("2026-11-01"),
-        companyLogoImg: horizonsHomepage,
+        companyLogoImg: horizonsCover,
         pagesInfoArr: [
           {
             title: "Homepage",
