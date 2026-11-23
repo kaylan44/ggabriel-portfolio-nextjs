@@ -141,7 +141,7 @@ export default {
     'projects.swanlessons.bullet3': "Intégration d’éléments de réassurance : certifications, avis clients et tarification claire",
     'projects.swanlessons.bullet4': "Interface responsive développée avec React, Next.js et Tailwind CSS",
 
-    'projects.vocabio.description': "Application mobile de quiz de vocabulaire (espagnol & indonésien) avec messagerie temps réel, statistiques détaillées et articles espagnols — focus sur l'architecture backend.",
+    'projects.vocabio.description': "Application mobile de quiz de vocabulaire (espagnol & indonésien) avec messagerie temps réel, statistiques détaillées et articles espagnols, focus sur l'architecture backend.",
     'projects.vocabio.desktopdesc': "Écran de connexion, accueil avec modes quiz bidirectionnels (Français→Espagnol / Espagnol→Français), et question de quiz en cours avec 4 choix taggés par catégorie grammaticale et niveau CECRL.",
     'projects.vocabio.mobiledesc': "Sélection de langue, navigateur de vocabulaire par catégorie, et lecteur d'articles Easy-Spanish avec traduction au tap sur les expressions soulignées.",
     'projects.vocabio.articlesdesc': "Écran compte avec statistiques de quiz détaillées (par sens, catégorie et niveau CECRL, mots les plus ratés), et interface de messagerie 1:1 temps réel.",
@@ -160,7 +160,7 @@ export default {
     'projects.dataviz.mapdesc': "Vue cartographique permettant une analyse spatiale de la distribution des données énergétiques et des insights de marché régionaux.",
     'projects.dataviz.detailsdesc': `Développement d'une plateforme interactive de visualisation de données orientée vers l'analyse des marchés énergétiques.
         L'application s'appuie sur Vue.js pour une architecture single-page responsive et ECharts pour des composants graphiques riches et interactifs.
-        Le dashboard intègre plusieurs vues — suivi de portefeuille, monitoring des prix du pétrole et du GNL, et cartographie géographique — pour fournir des insights opérationnels sur les marchés.`,
+        Le dashboard intègre plusieurs vues (suivi de portefeuille, monitoring des prix du pétrole et du GNL, et cartographie géographique) pour fournir des insights opérationnels sur les marchés.`,
     'projects.dataviz.bullet1': "Graphiques interactifs riches avec ECharts : chandeliers, lignes et barres",
     'projects.dataviz.bullet2': "Vue cartographique pour l'analyse spatiale des données de marché",
     'projects.dataviz.bullet3': "Suivi des performances de portefeuille et monitoring des prix des matières premières",
@@ -168,12 +168,12 @@ export default {
 
     'projects.horizonspossibles.description': "Site de coaching en expatriation aidant les familles et entrepreneurs francophones à construire une vie à l'étranger, développé avec Next.js.",
     'projects.horizonspossibles.desktopdesc': "Hero de la page d'accueil présentant la proposition de valeur avec un fond immersif plein écran, des boutons CTA clairs et une navigation épurée ciblant entrepreneurs et familles.",
-    'projects.horizonspossibles.temoignagesdesc': "Page témoignages présentant 13 avis vidéo de vrais clients — familles, entrepreneurs et futurs expatriés — dans une grille sombre épurée.",
+    'projects.horizonspossibles.temoignagesdesc': "Page témoignages présentant 13 avis vidéo de vrais clients (familles, entrepreneurs et futurs expatriés) dans une grille sombre épurée.",
     'projects.horizonspossibles.paysdesc': "Pages pays dédiées (Thaïlande, Mexique, Bali, Vietnam…) avec hero immersif, données clés (langue, monnaie, décalage horaire, vol), profils cibles, points forts et vigilances.",
-    'projects.horizonspossibles.mobiledesc': "Vues optimisées mobile de la page d'accueil, de la grille témoignages et des pages pays — mise en page entièrement responsive adaptée aux petits écrans.",
+    'projects.horizonspossibles.mobiledesc': "Vues optimisées mobile de la page d'accueil, de la grille témoignages et des pages pays, avec une mise en page entièrement responsive adaptée aux petits écrans.",
     'projects.horizonspossibles.detailsdesc': `Conception et développement d'un site de coaching orienté conversion pour Grégory, expert en expatriation accompagnant les familles et entrepreneurs francophones dans leur installation à l'étranger.
         Le site est construit autour de deux parcours d'accompagnement (entrepreneurs et familles), 9 pages pays détaillées, une page de 13 témoignages vidéo, un quiz interactif et un CTA WhatsApp.
-        Le design adopte une typographie bold et affirmée, avec des heroes immersifs, une section témoignages en thème sombre et une hiérarchie de contenu claire sur toutes les pages.`,
+        Le site offre un rendu haut de gamme tout en respectant la direction artistique du client, en cohérence avec sa présence sur ses réseaux sociaux.`,
     'projects.horizonspossibles.bullet1': "Deux parcours distincts : entrepreneurs (société, banque, visa, fiscalité) et familles (école, logement, visa)",
     'projects.horizonspossibles.bullet2': "9 pages pays avec données clés, profils, points forts/vigilances et système de notation comparative",
     'projects.horizonspossibles.bullet3': "Page témoignages avec 13 vidéos de clients (familles et entrepreneurs)",
